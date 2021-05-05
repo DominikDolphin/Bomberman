@@ -1,6 +1,7 @@
 local Array = require(game.ReplicatedStorage.Common.Array2D)
+local gameSettings = game.ReplicatedStorage.gameSettings
+local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local tileFolder = game.Workspace.Tiles
-local tileSize = 7; -- constant value
 local grid = Array.new(11,11) --Array Size
 local Pos = CFrame.new(0,5,0); --Starting Position
 local ColorPos = 0; --Used for tile colours
