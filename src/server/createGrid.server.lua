@@ -62,7 +62,7 @@ for _,v in pairs (tileFolder:GetChildren()) do
 	local deb = false
 	v.Touched:connect(function(s)
 		if not deb then deb = true end
-		v:SetAttribute("isOccupied", true)
+		--v:SetAttribute("isOccupied", true)
 		local toKill = v:GetAttribute("killOnTouch")
 		if toKill then
 			print("issa true")

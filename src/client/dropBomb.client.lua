@@ -1,5 +1,8 @@
 local UserInputService = game:GetService("UserInputService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local dropMelon = ReplicatedStorage.Events:WaitForChild("dropMelon")
 local player = game.Players.LocalPlayer
+
 
 game:GetService("UserInputService").InputBegan:connect(function(input, Processed)
 	if not Processed then
@@ -16,8 +19,8 @@ game:GetService("UserInputService").InputBegan:connect(function(input, Processed
 					local x = hit:GetAttribute("x")
 					local y = hit:GetAttribute("z")
 					local occupied = hit:GetAttribute("isOccupied")
-					if occupied == false then						
-						print("Perfect")
+					if not occupied then						
+						dropMelon:FireServer(hit)
 					end 
 				end
 			end
