@@ -69,27 +69,27 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>-53.6594162</X>
-					<Y>42.3365746</Y>
-					<Z>11.0213766</Z>
-					<R00>0.945736527</R00>
-					<R01>-0.266809493</R01>
-					<R02>0.185459226</R02>
-					<R10>1.49011612e-08</R10>
-					<R11>0.570758879</R11>
-					<R12>0.821117818</R12>
-					<R20>-0.324934483</R20>
-					<R21>-0.776561141</R21>
-					<R22>0.539787531</R22>
+					<X>56.8571854</X>
+					<Y>42.9441872</Y>
+					<Z>33.6872635</Z>
+					<R00>-0.496338606</R00>
+					<R01>-0.532089353</R01>
+					<R02>0.685951233</R02>
+					<R10>1.49011594e-08</R10>
+					<R11>0.790148914</R11>
+					<R12>0.612915039</R12>
+					<R20>-0.868129015</R20>
+					<R21>0.304213405</R21>
+					<R22>-0.392181396</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>-54.0303345</X>
-					<Y>40.6943398</Y>
-					<Z>9.94180202</Z>
+					<X>55.4852829</X>
+					<Y>41.7183571</Y>
+					<Z>34.4716263</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -332,6 +332,119 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				</Properties>
 			</Item>
 		</Item>
+		<Item class="SpawnLocation" referent="RBX3BB489E6A1664718A7E368114CE5E6C9">
+			<Properties>
+				<bool name="AllowTeamChangeOnTouch">false</bool>
+				<bool name="Anchored">true</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>16</X>
+					<Y>27.5</Y>
+					<Z>22</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="CanTouch">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<int name="Duration">10</int>
+				<bool name="Enabled">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">SpawnLocation</string>
+				<bool name="Neutral">true</bool>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="TeamColor">194</int>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>12</X>
+					<Y>1</Y>
+					<Z>12</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Decal" referent="RBX66A2034EB92441A58B195AFE5DE3C6C5">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<Color3 name="Color3">
+						<R>1</R>
+						<G>1</G>
+						<B>1</B>
+					</Color3>
+					<token name="Face">1</token>
+					<string name="Name">Decal</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="Texture"><url>rbxasset://textures/SpawnLocation.png</url></Content>
+					<float name="Transparency">0</float>
+				</Properties>
+			</Item>
+		</Item>
 	</Item>
 	<Item class="SoundService" referent="6">
 		<Properties>
@@ -513,7 +626,10 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 						<string name="Name">dropBomb</string>
 						<string name="ScriptGuid">{8735FCD2-5DAB-42BE-AA83-608D40D0B47B}</string>
 						<ProtectedString name="Source"><![CDATA[local UserInputService = game:GetService("UserInputService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local dropMelon = ReplicatedStorage.Events:WaitForChild("dropMelon")
 local player = game.Players.LocalPlayer
+
 
 game:GetService("UserInputService").InputBegan:connect(function(input, Processed)
 	if not Processed then
@@ -531,7 +647,7 @@ game:GetService("UserInputService").InputBegan:connect(function(input, Processed
 					local y = hit:GetAttribute("z")
 					local occupied = hit:GetAttribute("isOccupied")
 					if not occupied then						
-						print("Perfect")
+						dropMelon:FireServer(hit)
 					end 
 				end
 			end
@@ -742,8 +858,9 @@ end)]]></ProtectedString>
 					<string name="Name">createGrid</string>
 					<string name="ScriptGuid">{C20D4BC2-3FB3-44D5-A7D9-CF7CF88FD4B1}</string>
 					<ProtectedString name="Source"><![CDATA[local Array = require(game.ReplicatedStorage.Common.Array2D)
+local gameSettings = game.ReplicatedStorage.gameSettings
+local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local tileFolder = game.Workspace.Tiles
-local tileSize = 7; -- constant value
 local grid = Array.new(11,11) --Array Size
 local Pos = CFrame.new(0,5,0); --Starting Position
 local ColorPos = 0; --Used for tile colours
@@ -802,10 +919,33 @@ end
 createGameBoard()
 
 for _,v in pairs (tileFolder:GetChildren()) do
+	v.Touched:Connect(function(player)
+		local canKill = v:GetAttribute("killOnTouch")
+		if canKill then
+			local h = player.Parent:FindFirstChild("Humanoid")
+			if h then
+				h.Health = 0
+			end
+		end	
+	end)
+	-- v:GetAttributeChangedSignal("killOnTouch"):Connect(function()
+	-- 	local canKill = v:GetAttribute("killOnTouch")
+	-- 	--print(canKill)
+	-- 	 if canKill == true then
+	-- 		print("it's true")
+	-- 	 	v.Touched:Connect(function(s)
+	-- 	 		print("killing player!")
+	-- 	 	end)
+	-- 	 end
+	-- end)
+end
+
+--[[
+for _,v in pairs (tileFolder:GetChildren()) do
 	local deb = false
 	v.Touched:connect(function(s)
 		if not deb then deb = true end
-		v:SetAttribute("isOccupied", true)
+		--v:SetAttribute("isOccupied", true)
 		local toKill = v:GetAttribute("killOnTouch")
 		if toKill then
 			print("issa true")
@@ -818,10 +958,78 @@ for _,v in pairs (tileFolder:GetChildren()) do
 	end)
 	
 	v.TouchEnded:connect(function(s)
-		v:SetAttribute("isOccupied", false)
+		--v:SetAttribute("isOccupied", false)
 	end)
 	
-end]]></ProtectedString>
+end]]]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXE341F169974442BEA0A5632879004C64">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">handlePlacedBomb</string>
+					<string name="ScriptGuid">{C07FFF9C-F748-45B7-8651-343CE4309ABF}</string>
+					<ProtectedString name="Source"><![CDATA[local dropMelon = game.ReplicatedStorage.Events:WaitForChild("dropMelon")
+local gameSettings = game.ReplicatedStorage.gameSettings
+local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
+
+local neighbours = {}
+local power = 2 --Users power
+
+local function handleNeighbours()
+    local originalColor
+    for _,v in pairs (neighbours) do
+        originalColor = v.BrickColor
+        v.BrickColor = BrickColor.new("Flint")
+    end
+    wait (2)
+    for _,v in pairs (neighbours) do
+        v.BrickColor = BrickColor.new("Black")
+        v:SetAttribute("killOnTouch", true)
+    end
+    wait(.2)
+    for _,v in pairs (neighbours) do
+        v:SetAttribute("killOnTouch", false)
+        v.BrickColor = originalColor
+	end
+	neighbours.remove()
+end
+
+dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
+    local x = hit:GetAttribute("x")
+    local z = hit:GetAttribute("z")
+    
+    if x and z then
+        hit:SetAttribute("isOccupied",true)
+        print(x .." | " ..z)
+        for _,v in pairs(game.Workspace.Tiles:GetChildren()) do
+            local vx = v:GetAttribute("x")
+            local vz = v:GetAttribute("z")
+            if vx and vz then
+                --Loop that iterates the value of players power and captures
+                --the neighbouring cells
+                for i = 1,power do
+                if ((vx == x+tileSize*i) and (vz == z)) or
+                    ((vx == x-tileSize*i) and (vz == z)) or
+                    ((vz == z+tileSize*i) and (vx == x)) or
+                    ((vz == z-tileSize*i) and (vx == x))
+                then
+                    table.insert(neighbours,v)
+                    -- v.BrickColor = BrickColor.new("Black")
+                    -- v:SetAttribute("killOnTouch", true)
+                    --handleNeighbours()
+                end
+            end
+            end
+        end
+		handleNeighbours()
+		
+    end
+end)]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
@@ -925,6 +1133,30 @@ return Array2D
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
+		</Item>
+		<Item class="Folder" referent="RBXA9303326FE3D472D91CB36DAC31BF3FC">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<string name="Name">Events</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="RemoteEvent" referent="RBX720FA103809C4B36ACEE25D0EBD911DD">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<string name="Name">dropMelon</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Configuration" referent="RBX3166C3BC71CE4C3D8DE2E8D8ABD66ED6">
+			<Properties>
+				<BinaryString name="AttributesSerialize">AQAAAAgAAAB0aWxlU2l6ZQYAAAAAAAAcQA==</BinaryString>
+				<string name="Name">gameSettings</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
 		</Item>
 	</Item>
 	<Item class="LuaWebService" referent="RBXFB45ADB35F7B43D8B2FB6550CAA475F6">

@@ -6,6 +6,12 @@ local grid = Array.new(11,11) --Array Size
 local Pos = CFrame.new(0,5,0); --Starting Position
 local ColorPos = 0; --Used for tile colours
 
+local function addKillScript(part)
+	local killScript = script.Parent.killOnTouch:Clone()
+	killScript.Parent = part
+	killScript.Disabled = true
+end
+
 local function createPart()
 	local part = Instance.new("Part")
 	part.Parent = tileFolder
@@ -13,7 +19,7 @@ local function createPart()
 	part.Size = Vector3.new(tileSize,5,tileSize)
 	part.TopSurface = Enum.SurfaceType.Smooth
 	part.Material = "Grass"
-	
+	addKillScript(part)
 	return part;
 end
 
@@ -58,25 +64,3 @@ local function createGameBoard()
 end
 
 createGameBoard()
-
-for _,v in pairs (tileFolder:GetChildren()) do
-	local deb = false
-	v.Touched:connect(function(s)
-		if not deb then deb = true end
-		--v:SetAttribute("isOccupied", true)
-		local toKill = v:GetAttribute("killOnTouch")
-		if toKill then
-			print("issa true")
-			local h = s.Parent:FindFirstChild("Humanoid")
-			if h then
-				h.Health = 0
-			end
-		end
-		deb = false
-	end)
-	
-	v.TouchEnded:connect(function(s)
-		v:SetAttribute("isOccupied", false)
-	end)
-	
-end
