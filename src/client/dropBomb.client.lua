@@ -3,7 +3,6 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local dropMelon = ReplicatedStorage.Events:WaitForChild("dropMelon")
 local player = game.Players.LocalPlayer
 
-
 game:GetService("UserInputService").InputBegan:connect(function(input, Processed)
 	if not Processed then
 		if input.KeyCode == Enum.KeyCode.F then --a PC key was pressed

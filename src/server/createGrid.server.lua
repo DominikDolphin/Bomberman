@@ -12,9 +12,9 @@ local function addKillScript(part)
 	killScript.Disabled = true
 end
 
-local function createPart()
+local function createPart(parent)
 	local part = Instance.new("Part")
-	part.Parent = tileFolder
+	part.Parent = parent or tileFolder
 	part.Anchored = true
 	part.Size = Vector3.new(tileSize,5,tileSize)
 	part.TopSurface = Enum.SurfaceType.Smooth
@@ -36,7 +36,7 @@ local function addWalls(x,z)
 		or x == grid:GetColumnLength()*tileSize --Last Column
 		or z == grid:GetRowLength()*tileSize -- Last Row
 	then 
-		local wall = createPart()
+		local wall = createPart(game.Workspace.Walls)
 		wall.CFrame = Pos + Vector3.new(x,5,z)
 		wall.BrickColor = BrickColor.Black()
 	end
@@ -57,7 +57,6 @@ local function createGameBoard()
 			addAttributes(part,x,z);
 			gridColorPattern(part)
 			addWalls(x,z)
-			
 			ColorPos = ColorPos + 1
 		end
 	end

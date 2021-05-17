@@ -65,6 +65,56 @@ local function handleNeighbours()
     table.clear(neighbours)
 end
 
+-- createBombRay(playerBomb, "UpVector")
+local function createBombRay(playerBomb, directionVector)
+    local radius = 1
+    local origin = playerBomb.Position
+
+    local direction
+
+    if directionVector == "UpVector" then
+        direction = playerBomb.CFrame.UpVector * ((power*tileSize) + tileSize/2)
+    else
+        direction =  playerBomb.CFrame.RightVector * (tileSize + tileSize/2)
+    end
+   -- local direction = playerBomb.CFrame.UpVector * 100
+
+   local raycastParams = RaycastParams.new()
+   raycastParams.FilterDescendantsInstances = {playerBomb, game.Players:GetPlayers(),workspace.Rays:GetChildren(), workspace.Tiles:GetChildren()}
+    local midpoint = origin + direction/2
+
+    local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
+    local killRay = Instance.new("Part")
+    killRay.Anchored = true
+    killRay.Parent = workspace.Rays
+    
+    --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+    
+    if raycastResult then
+        local hit = raycastResult.Instance
+        local hitPos = raycastResult.Position
+        if hit and hitPos then
+            hit.BrickColor = BrickColor.Red()
+            print(hit.Name)
+            print (hitPos)
+            local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hitPos.Z)/2)-hitPos.Z/2)
+            local newMid = origin + touchPartDirection/2
+            killRay.CFrame = CFrame.new(newMid,origin)
+            killRay.Size = Vector3.new(tileSize,radius, touchPartDirection.magnitude )
+            
+        else
+            print("Nothing.")
+        end
+    
+        
+    else -- It didnt hit anything
+        print("Didnt detect")
+        killRay.CFrame = CFrame.new(midpoint,origin)
+        killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+    end
+end
+
+
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
     local x = hit:GetAttribute("x")
     local z = hit:GetAttribute("z")
@@ -77,16 +127,17 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
         playerBomb.Rotation = Vector3.new(-90,0,0)
         --Debris:AddItem(playerBomb,2.1)
         
-        local radius = 1
-        local origin = playerBomb.Position
-        local direction = playerBomb.CFrame.UpVector * 100
-        local midpoint = origin + direction/2
-        local raycastResult = Workspace:Raycast(origin, direction)
-        local killRay = Instance.new("Part")
-        killRay.Anchored = true
-        killRay.Parent = workspace
-        killRay.CFrame = CFrame.new(midpoint,origin)
-        killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+        -- local radius = 1
+        -- local origin = playerBomb.Position
+        -- local direction = playerBomb.CFrame.UpVector * 100
+        -- local midpoint = origin + direction/2
+        -- local raycastResult = Workspace:Raycast(origin, direction)
+        -- local killRay = Instance.new("Part")
+        -- killRay.Anchored = true
+        -- killRay.Parent = workspace
+        -- killRay.CFrame = CFrame.new(midpoint,origin)
+        -- killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+        local leftRay = createBombRay(playerBomb,"UpVector")
     end
 
 end)
