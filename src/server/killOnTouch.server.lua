@@ -1,4 +1,4 @@
-wait(.01)
+print("here")
 script.Parent.Touched:Connect(function(player)
     
     local h = player.Parent:FindFirstChild("Humanoid")

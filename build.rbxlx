@@ -70,27 +70,27 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>80.6614075</X>
-					<Y>35.3828316</Y>
-					<Z>60.1365471</Z>
-					<R00>0.424702883</R00>
-					<R01>-0.494956821</R01>
-					<R02>0.758053541</R02>
-					<R10>-0</R10>
-					<R11>0.837320328</R11>
-					<R12>0.546712577</R12>
-					<R20>-0.905332804</R20>
-					<R21>-0.2321904</R21>
-					<R22>0.355612338</R22>
+					<X>40.4178085</X>
+					<Y>31.3561726</Y>
+					<Z>70.9139023</Z>
+					<R00>0.97224611</R00>
+					<R01>0.168416157</R01>
+					<R02>-0.162399575</R02>
+					<R10>7.4505806e-09</R10>
+					<R11>0.694131851</R11>
+					<R12>0.719848037</R12>
+					<R20>0.233960703</R20>
+					<R21>-0.699869454</R21>
+					<R22>0.674866915</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>42</X>
-					<Y>7.5</Y>
-					<Z>42</Z>
+					<X>40.7426071</X>
+					<Y>29.9164791</Y>
+					<Z>69.5641708</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -534,7 +534,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<Vector3 name="size">
 					<X>5</X>
 					<Y>5</Y>
-					<Z>1</Z>
+					<Z>5</Z>
 				</Vector3>
 			</Properties>
 			<Item class="SpecialMesh" referent="RBX2">
@@ -18691,6 +18691,228 @@ end)]]></ProtectedString>
 					</Properties>
 				</Item>
 			</Item>
+			<Item class="Part" referent="RBXFE367A757A3943C780D1575E8BD28B6F">
+				<Properties>
+					<bool name="Anchored">true</bool>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">4</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>42</X>
+						<Y>10</Y>
+						<Z>42</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<bool name="CanTouch">true</bool>
+					<bool name="CastShadow">true</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">1280</token>
+					<string name="Name">Part</string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">1</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>7</X>
+						<Y>5</Y>
+						<Z>7</Z>
+					</Vector3>
+				</Properties>
+				<Item class="Script" referent="RBX6C5CC3B51078405999677C56D5A77DB0">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">killOnTouch</string>
+						<string name="ScriptGuid">{49E810D4-14BD-4D5A-8262-9A49E278C22A}</string>
+						<ProtectedString name="Source"><![CDATA[wait(.01)
+script.Parent.Touched:Connect(function(player)
+    
+    local h = player.Parent:FindFirstChild("Humanoid")
+    if h then
+        h.Health = 0
+    end
+end)]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Part" referent="RBX788D3C4A2EFF45D4B970055795846232">
+				<Properties>
+					<bool name="Anchored">true</bool>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">4</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>42</X>
+						<Y>10</Y>
+						<Z>56</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">true</bool>
+					<bool name="CanTouch">true</bool>
+					<bool name="CastShadow">true</bool>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">1280</token>
+					<string name="Name">Part</string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">0</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">0</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="formFactorRaw">1</token>
+					<token name="shape">1</token>
+					<Vector3 name="size">
+						<X>7</X>
+						<Y>5</Y>
+						<Z>7</Z>
+					</Vector3>
+				</Properties>
+				<Item class="Script" referent="RBX71305B2E54464B7DA5BE9AA4278E57D9">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">killOnTouch</string>
+						<string name="ScriptGuid">{576A6AEE-0FB2-4E6C-A221-DA103E8C205F}</string>
+						<ProtectedString name="Source"><![CDATA[wait(.01)
+script.Parent.Touched:Connect(function(player)
+    
+    local h = player.Parent:FindFirstChild("Humanoid")
+    if h then
+        h.Health = 0
+    end
+end)]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
 		</Item>
 	</Item>
 	<Item class="SoundService" referent="6">
@@ -18862,7 +19084,7 @@ end)]]></ProtectedString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Client</string>
 					<string name="ScriptGuid">{F52C17D5-7E8D-43EE-8CEE-1225B36AD22F}</string>
-					<ProtectedString name="Source">print(&quot;Hello world, from client!&quot;)</ProtectedString>
+					<ProtectedString name="Source">--print(&quot;Hello world, from client!&quot;)</ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
@@ -19186,7 +19408,6 @@ local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 
-
 local neighbours = {}
 local power = 2 --Users power
 
@@ -19222,53 +19443,49 @@ local function createExplosion(part)
     return exp;
 end
 
-local function handleNeighbours()
-    local getScripts = {}
-   -- local originalColor
-    for _,v in pairs (neighbours) do
-        --originalColor = v.BrickColor
-        v.BrickColor = BrickColor.new("Flint")
-        --table.insert(getScripts,v.killOnTouch)
+local function filterPlayers()
+    local players = {}
+    local getPlayers = game.Players:GetPlayers()
+    for _,v in pairs (getPlayers) do
+        table.insert(players,v.Character)
     end
-    wait (2)
 
-   
-    for _,v in pairs (neighbours) do
-        v.BrickColor = BrickColor.new("Black")
-        v:SetAttribute("killOnTouch", true)
-        v.killOnTouch.Disabled = false
-    end
-    wait(.4)
-    for _,v in pairs (neighbours) do
-        v:SetAttribute("killOnTouch", false)
-        v.BrickColor = BrickColor.Green()
-        v.killOnTouch.Disabled = true
-    end
-    table.clear(neighbours)
+    return players
 end
 
--- createBombRay(playerBomb, "UpVector")
-local function createBombRay(playerBomb, directionVector)
+
+-- createBombRay(playerBomb, "UpVector", orientation)
+local function createBombRay(playerBomb, directionVector, orientationNumber)
     local radius = 1
     local origin = playerBomb.Position
-
+    local powerRange = ((power * tileSize) + tileSize/2)
+    local orientation = orientationNumber or 1
+    
     local direction
-
     if directionVector == "UpVector" then
-        direction = playerBomb.CFrame.UpVector * ((power*tileSize) + tileSize/2)
+        direction = playerBomb.CFrame.UpVector * powerRange * orientation
     else
-        direction =  playerBomb.CFrame.RightVector * (tileSize + tileSize/2)
+        direction =  playerBomb.CFrame.RightVector * powerRange * orientation
     end
    -- local direction = playerBomb.CFrame.UpVector * 100
 
-   local raycastParams = RaycastParams.new()
-   raycastParams.FilterDescendantsInstances = {playerBomb, game.Players:GetPlayers(),workspace.Rays:GetChildren(), workspace.Tiles:GetChildren()}
-    local midpoint = origin + direction/2
+    --Ray will go through players
+    local playerCharacters = filterPlayers()
 
+    --List of things to filter out
+   local raycastParams = RaycastParams.new()
+   raycastParams.FilterDescendantsInstances = {
+        playerBomb, 
+        playerCharacters,
+        workspace.Rays:GetChildren(),
+        workspace.Tiles:GetChildren()
+    }
+    local midpoint = origin + direction/2
     local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
     local killRay = Instance.new("Part")
     killRay.Anchored = true
     killRay.Parent = workspace.Rays
+    killRay.CanCollide = false
     
     --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     
@@ -19277,94 +19494,126 @@ local function createBombRay(playerBomb, directionVector)
         local hitPos = raycastResult.Position
         if hit and hitPos then
             hit.BrickColor = BrickColor.Red()
-            print(hit.Name)
-            print (hitPos)
-            local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hitPos.Z)/2)-hitPos.Z/2)
-            local newMid = origin + touchPartDirection/2
+            print(hit.Position.Z)
+            print(playerBomb.Position.Z)
+            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
+            local touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
-            killRay.Size = Vector3.new(tileSize,radius, touchPartDirection.magnitude )
-            
-        else
-            print("Nothing.")
-        end
-    
-        
+            killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
+        end  
     else -- It didnt hit anything
-        print("Didnt detect")
+        --print("Didnt detect")
         killRay.CFrame = CFrame.new(midpoint,origin)
         killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     end
+
+    return killRay
 end
 
 
+local function createBombRayX(playerBomb, directionVector, orientationNumber)
+    local radius = 1
+    local origin = playerBomb.Position
+    local powerRange = ((power * tileSize) + tileSize/2)
+    local orientation = orientationNumber or 1
+    
+    local direction
+    if directionVector == "UpVector" then
+        direction = playerBomb.CFrame.UpVector * powerRange * orientation
+    else
+        direction =  playerBomb.CFrame.RightVector * powerRange * orientation
+    end
+   -- local direction = playerBomb.CFrame.UpVector * 100
+
+    --Ray will go through players
+    local playerCharacters = filterPlayers()
+
+    --List of things to filter out
+   local raycastParams = RaycastParams.new()
+   raycastParams.FilterDescendantsInstances = {
+        playerBomb, 
+        playerCharacters,
+        workspace.Rays:GetChildren(),
+        workspace.Tiles:GetChildren()
+    }
+    local midpoint = origin + direction/2
+    local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
+    local killRay = Instance.new("Part")
+    killRay.Anchored = true
+    killRay.Parent = workspace.Rays
+    killRay.CanCollide = false
+    --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+    
+    if raycastResult then
+        local hit = raycastResult.Instance
+        local hitPos = raycastResult.Position
+        if hit and hitPos then
+            hit.BrickColor = BrickColor.Red()
+            -- print(hit.Position.Z)
+            -- print(playerBomb.Position.Z)
+            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
+            local touchPartDirection = playerBomb.CFrame.RightVector * (hit.Position.X - playerBomb.Position.X)/2
+            local newMid = origin + touchPartDirection
+            killRay.CFrame = CFrame.new(newMid,origin)
+            killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
+        end  
+    else -- It didnt hit anything
+        --print("Didnt detect")
+        killRay.CFrame = CFrame.new(midpoint,origin)
+        killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
+    end
+
+    return killRay
+end
+
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
     local x = hit:GetAttribute("x")
     local z = hit:GetAttribute("z")
     
     if x and z then
         hit:SetAttribute("isOccupied",true)
-        print(x .." | " ..z)
+        --print(x .." | " ..z)
         local playerBomb = createBomb()
         playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
         playerBomb.Rotation = Vector3.new(-90,0,0)
+        playerBomb.CanCollide = false
         --Debris:AddItem(playerBomb,2.1)
-        
-        -- local radius = 1
-        -- local origin = playerBomb.Position
-        -- local direction = playerBomb.CFrame.UpVector * 100
-        -- local midpoint = origin + direction/2
-        -- local raycastResult = Workspace:Raycast(origin, direction)
-        -- local killRay = Instance.new("Part")
-        -- killRay.Anchored = true
-        -- killRay.Parent = workspace
-        -- killRay.CFrame = CFrame.new(midpoint,origin)
-        -- killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
-        local leftRay = createBombRay(playerBomb,"UpVector")
-    end
 
-end)
---[[
-dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
-    local x = hit:GetAttribute("x")
-    local z = hit:GetAttribute("z")
-    
-    if x and z then
-        hit:SetAttribute("isOccupied",true)
-        print(x .." | " ..z)
-        local playerBomb = createBomb()
-        playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
-        Debris:AddItem(playerBomb,2.1)
-        
-        
-        for _,v in pairs(game.Workspace.Tiles:GetChildren()) do
-            local vx = v:GetAttribute("x")
-            local vz = v:GetAttribute("z")
-            if vx and vz then
-                
-                --Loop that iterates the value of players power and captures
-                --the neighbouring cells
-                for i = 1,power do
-                    if ((vx == x+tileSize*i) and (vz == z)) or
-                        ((vx == x-tileSize*i) and (vz == z)) or
-                        ((vz == z+tileSize*i) and (vx == x)) or
-                        ((vz == z-tileSize*i) and (vx == x))
-                    then
-                        table.insert(neighbours,v)
-                    end
-                end
-                table.insert(neighbours,hit)
+        --  p = plus
+        --  m = minuse
+        local Zp = createBombRay(playerBomb,"UpVector",-1)
+        local Zm = createBombRay(playerBomb,"UpVector", 1)
+
+        --Must change inside function from z to x for position/Cframe/size
+         local Xp = createBombRayX(playerBomb,"other", 1)
+         local Xm = createBombRayX(playerBomb,"other", -1)
+
+         local activeRays = {}
+         table.insert(activeRays, Zp)
+         table.insert(activeRays, Zm)
+         table.insert(activeRays, Xp)
+         table.insert(activeRays, Xm)
+         table.insert(activeRays,playerBomb)
+         print(activeRays)
+         wait(2)
+
+         spawn(function()
+            for _,v in pairs (activeRays) do
+                v.Touched:connect(function()
+                    print("Touched")
+                end)
             end
-        end
+         end)
+         spawn(function()
+            for _,v in pairs (activeRays) do
+                Debris:AddItem(v,2.1)
+            end
+         end)
 
-         handleNeighbours()
-
-       -- testTouch() 
-        
-        hit:SetAttribute("isOccupied",false)
     end
-end)
-]]
-]]></ProtectedString>
+
+end)]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
@@ -19514,6 +19763,20 @@ end)]]></ProtectedString>
 						<Y>1</Y>
 						<Z>1</Z>
 					</Vector3>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXFAC4AF45958F4668B94B5875A9D0953C">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<string name="ScriptGuid">{40A172F0-7A50-4E96-89B2-4A2C1A7A47DF}</string>
+					<ProtectedString name="Source"><![CDATA[script.Parent.Touched:Connect(function()
+	print("Touched")
+end)]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
 		</Item>
