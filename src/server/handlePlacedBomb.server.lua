@@ -5,7 +5,7 @@ local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 
 local neighbours = {}
-local power = 3 --Users power
+local power = 2 --Users power
 
 local function testTouch()
     for _,v in pairs (neighbours) do
@@ -54,7 +54,7 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
     local origin = playerBomb.Position
     local powerRange = ((power * tileSize) + tileSize/2)
     local orientation = orientationNumber or 1
-
+    
     local direction
     if directionVector == "UpVector" then
         direction = playerBomb.CFrame.UpVector * powerRange * orientation
@@ -75,7 +75,6 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         workspace.Tiles:GetChildren()
     }
     local midpoint = origin + direction/2
-
     local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
     local killRay = Instance.new("Part")
     killRay.Anchored = true
@@ -88,11 +87,13 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         local hitPos = raycastResult.Position
         if hit and hitPos then
             hit.BrickColor = BrickColor.Red()
-            
-            local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hitPos.Z)/2)-hitPos.Z/2)
-            local newMid = origin + touchPartDirection/2
+            print(hit.Position.Z)
+            print(playerBomb.Position.Z)
+            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
+            local touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
-            killRay.Size = Vector3.new(tileSize,radius, touchPartDirection.magnitude )
+            killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
         end  
     else -- It didnt hit anything
         --print("Didnt detect")
@@ -108,7 +109,7 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
     
     if x and z then
         hit:SetAttribute("isOccupied",true)
-        print(x .." | " ..z)
+        --print(x .." | " ..z)
         local playerBomb = createBomb()
         playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
         playerBomb.Rotation = Vector3.new(-90,0,0)
@@ -116,7 +117,7 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 
         --  p = plus
         --  m = minuse
-        local Zp = createBombRay(playerBomb,"UpVector",-1)
+        --local Zp = createBombRay(playerBomb,"UpVector",-1)
         local Zm = createBombRay(playerBomb,"UpVector", 1)
 
         --Must change inside function from z to x for position/Cframe/size
