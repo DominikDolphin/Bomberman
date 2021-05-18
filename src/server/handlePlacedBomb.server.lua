@@ -4,7 +4,7 @@ local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 local avPowerUps = game.Workspace:WaitForChild("availablePowerUps")
-local power = 2 --Users power
+local power = 0 --Users power
 local StatsCloud = game.ServerStorage:WaitForChild("StatsCloud")
 local function createBomb()
     local clone = bomb:Clone()
@@ -159,9 +159,11 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 	if findPlayerStats then
 		local melons  = findPlayerStats:FindFirstChild("Melons")
 		local melonsPlaced  = findPlayerStats:FindFirstChild("MelonsPlaced")
-		if melons and melonsPlaced then
+        local powerStat = findPlayerStats:FindFirstChild("Power")
+		if melons and melonsPlaced and power then
 			if melonsPlaced.Value < melons.Value then
 				melonsPlaced.Value = melonsPlaced.Value + 1
+                power = powerStat.Value
 				local x = hit:GetAttribute("x")
 				local z = hit:GetAttribute("z")
 
@@ -182,31 +184,8 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 					wait(1.5)
                     
                     if playerBomb:GetAttribute("explode") == false then
-                        --explode(playerBomb)
                         playerBomb:SetAttribute("explode",true)
                     end
-                    --[[
-					--  p = plus | m = minus
-					local Zp = createBombRay(playerBomb,"UpVector",-1)
-					local Zm = createBombRay(playerBomb,"UpVector", 1)
-
-					--Must change inside function from z to x for position/Cframe/size
-					local Xp = createBombRay(playerBomb,"other", 1)
-					local Xm = createBombRay(playerBomb,"other", -1)
-
-					local activeRays = {}
-					table.insert(activeRays, Zp)
-					table.insert(activeRays, Zm)
-					table.insert(activeRays, Xp)
-					table.insert(activeRays, Xm)
-					table.insert(activeRays,playerBomb)
-
-					spawn(function()
-						for _,v in pairs (activeRays) do
-							Debris:AddItem(v,0.1)
-						end
-					end)
-                    ]]
 
                     hit:SetAttribute("isOccupied",false)
 				end
