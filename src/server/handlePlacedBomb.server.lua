@@ -4,23 +4,7 @@ local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 
-local neighbours = {}
 local power = 2 --Users power
-
-local function testTouch()
-    for _,v in pairs (neighbours) do
-        local toKill = v:GetAttribute("killOnTouch")
-        if toKill then
-            for _,p in pairs(v:GetTouchingParts()) do
-                
-                local player = p.Parent:FindFirstChild("Humanoid")
-                if player then
-                    player.Health = 0
-                end
-            end
-        end
-    end
-end
 
 local function createBomb()
     local clone = bomb:Clone()
@@ -49,8 +33,6 @@ local function filterPlayers()
     return players
 end
 
-
--- createBombRay(playerBomb, "UpVector", orientation)
 local function createBombRay(playerBomb, directionVector, orientationNumber)
     local radius = 1
     local origin = playerBomb.Position
@@ -82,7 +64,8 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
     killRay.Anchored = true
     killRay.Parent = workspace.Rays
     killRay.CanCollide = false
-    
+    killRay.Transparency = 0.4
+    killRay.BrickColor = BrickColor.Red()
     --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     
     if raycastResult then
@@ -90,81 +73,30 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         local hitPos = raycastResult.Position
         if hit and hitPos then
             hit.BrickColor = BrickColor.Red()
-            print(hit.Position.Z)
-            print(playerBomb.Position.Z)
-            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
-            local touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            local touchPartDirection
+            if directionVector == "UpVector" then
+                touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            else
+                touchPartDirection = playerBomb.CFrame.RightVector * (hit.Position.X - playerBomb.Position.X)/2 
+            end
             local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
             killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
+
+            if hit.Name == "Crate" or hit.Parent == "Crates" then
+                hit:Destroy()
+            end
         end  
     else -- It didnt hit anything
-        --print("Didnt detect")
         killRay.CFrame = CFrame.new(midpoint,origin)
         killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     end
-
+    
     local killScript = script.Parent:FindFirstChild("killOnTouch"):Clone()
     killScript.Parent = killRay
     return killRay
 end
 
-
-local function createBombRayX(playerBomb, directionVector, orientationNumber)
-    local radius = 1
-    local origin = playerBomb.Position
-    local powerRange = ((power * tileSize) + tileSize/2)
-    local orientation = orientationNumber or 1
-    
-    local direction
-    if directionVector == "UpVector" then
-        direction = playerBomb.CFrame.UpVector * powerRange * orientation
-    else
-        direction =  playerBomb.CFrame.RightVector * powerRange * orientation
-    end
-   -- local direction = playerBomb.CFrame.UpVector * 100
-
-    --Ray will go through players
-    local playerCharacters = filterPlayers()
-
-    --List of things to filter out
-   local raycastParams = RaycastParams.new()
-   raycastParams.FilterDescendantsInstances = {
-        playerBomb, 
-        playerCharacters,
-        workspace.Rays:GetChildren(),
-        workspace.Tiles:GetChildren()
-    }
-    local midpoint = origin + direction/2
-    local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
-    local killRay = Instance.new("Part")
-    killRay.Anchored = true
-    killRay.Parent = workspace.Rays
-    killRay.CanCollide = false
-    --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
-    
-    if raycastResult then
-        local hit = raycastResult.Instance
-        local hitPos = raycastResult.Position
-        if hit and hitPos then
-            hit.BrickColor = BrickColor.Red()
-            -- print(hit.Position.Z)
-            -- print(playerBomb.Position.Z)
-            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
-            local touchPartDirection = playerBomb.CFrame.RightVector * (hit.Position.X - playerBomb.Position.X)/2
-            local newMid = origin + touchPartDirection
-            killRay.CFrame = CFrame.new(newMid,origin)
-            killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
-        end  
-    else -- It didnt hit anything
-        --print("Didnt detect")
-        killRay.CFrame = CFrame.new(midpoint,origin)
-        killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
-    end
-    local killScript = script.Parent:FindFirstChild("killOnTouch"):Clone()
-    killScript.Parent = killRay
-    return killRay
-end
 
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
     local x = hit:GetAttribute("x")
@@ -177,6 +109,7 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
         playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
         playerBomb.Rotation = Vector3.new(-90,0,0)
         playerBomb.CanCollide = false
+        playerBomb.moveUp.Disabled = false
         --Debris:AddItem(playerBomb,2.1)
         wait(1.5)
 
@@ -186,8 +119,8 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
         local Zm = createBombRay(playerBomb,"UpVector", 1)
 
         --Must change inside function from z to x for position/Cframe/size
-         local Xp = createBombRayX(playerBomb,"other", 1)
-         local Xm = createBombRayX(playerBomb,"other", -1)
+         local Xp = createBombRay(playerBomb,"other", 1)
+         local Xm = createBombRay(playerBomb,"other", -1)
 
          local activeRays = {}
          table.insert(activeRays, Zp)
@@ -195,8 +128,6 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
          table.insert(activeRays, Xp)
          table.insert(activeRays, Xm)
          table.insert(activeRays,playerBomb)
-         print(activeRays)
-
          
          spawn(function()
             for _,v in pairs (activeRays) do

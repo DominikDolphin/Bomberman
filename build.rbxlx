@@ -70,27 +70,27 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>40.4178085</X>
-					<Y>31.3561726</Y>
-					<Z>70.9139023</Z>
-					<R00>0.97224611</R00>
-					<R01>0.168416157</R01>
-					<R02>-0.162399575</R02>
-					<R10>7.4505806e-09</R10>
-					<R11>0.694131851</R11>
-					<R12>0.719848037</R12>
-					<R20>0.233960703</R20>
-					<R21>-0.699869454</R21>
-					<R22>0.674866915</R22>
+					<X>1.90716338</X>
+					<Y>58.0252342</Y>
+					<Z>43.7220306</Z>
+					<R00>-0.131101325</R00>
+					<R01>0.824206889</R01>
+					<R02>-0.550904274</R02>
+					<R10>-0</R10>
+					<R11>0.555700541</R11>
+					<R12>0.831382573</R12>
+					<R20>0.991369009</R20>
+					<R21>0.108995356</R21>
+					<R22>-0.0728530735</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>40.7426071</X>
-					<Y>29.9164791</Y>
-					<Z>69.5641708</Z>
+					<X>3.00897217</X>
+					<Y>56.3624687</Y>
+					<Z>43.8677368</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -783,25 +783,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX14BB395A6B6A43169183C1E41AB2AB8E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E87FE208-4F17-4250-A1EB-E42B8DA85379}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXADEB0BE71D114D99A4D3263A5B774B14">
 				<Properties>
@@ -895,25 +876,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF33E1F4215D54F35B612749019F30718">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4FA956B1-99E1-468C-8BE6-E6A1E49A480A}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD1C31341895E462698F64D02D89725AB">
 				<Properties>
@@ -1007,25 +969,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX4D3798D8DCE74BA4AD145EFFA34C66C3">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{61D3AAD8-FF5A-4756-8642-B27A9BC42E86}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX05935B650D7F476AAD8942A92E580527">
 				<Properties>
@@ -1119,25 +1062,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXD61001D4799540CA8B143D23473D5806">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{61DB0498-AA4C-46F2-B462-74A63FCFB75E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXEFE2D39564CF48C38BE5E30E6C7929A5">
 				<Properties>
@@ -1231,25 +1155,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX28D248C19346450A804FC001A3F1612D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{AB805027-1F90-4C5F-A9D9-C92A96A78A03}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX68EBDC0FC4EA42B7ACA1C4DFB8554E73">
 				<Properties>
@@ -1343,25 +1248,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX8D231408D5A04DDF9B51ED127EE0E0FB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{211C1B67-04F2-4E93-A8BB-4E930C21ADAB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX55AE6041B01341A0A5286F232CB8833C">
 				<Properties>
@@ -1455,25 +1341,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX3F0AACEB33204A9A98BDA9101B50ED23">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{6FE9F46C-A706-441B-9F57-C41B3EC1C41C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX41E4BCB27A944E96A0EFA01F2DEC5CE9">
 				<Properties>
@@ -1567,25 +1434,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX1E6B58C3B43648E09F9071E7E328D85E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{9E8B4CEB-247B-4227-84D7-D80CD007F4B4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXFC1B1AAB7E1641F1B6DB7829F01320D5">
 				<Properties>
@@ -1679,25 +1527,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX19E50B5049974ACEB649BAAD6BD634BB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{18987E37-EA22-4A25-93D0-8686E8423431}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD4A34B132EA84BE987B1A868DAA464DF">
 				<Properties>
@@ -1791,25 +1620,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7C3A6C27F55C485F80961DEF9F45ADAC">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A69BBCAC-6B3A-4086-908D-FFAE8D90616B}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA6ED871DB29A47B5845F0D7D8AA65F92">
 				<Properties>
@@ -1903,25 +1713,6 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXFA972925E36E48A39CA3C9DB43210C8D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C3366373-C3EC-47C7-8916-3BD6FD47F45B}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX039423697A6E44C79B0B39D9D6D6AAC3">
 				<Properties>
@@ -2015,25 +1806,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXCA72A240DA0B49FBA243C480C9F55BFB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A188B4FC-EB15-4A76-87EB-F72DFA5ED6C3}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB0237DEEFEFA4E069407162FACDB2ACB">
 				<Properties>
@@ -2127,25 +1899,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXBAB25827E674482D92B00647240998F5">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2A8535E4-1A7A-4889-BD10-F56DB9770D73}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX9F82FDFC686B49ADB7A8D7B641AF2F6A">
 				<Properties>
@@ -2239,25 +1992,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXEDCFA176EBC647EC860A384B59D11C2E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{75E8F1C3-BA03-42AE-9235-0423F200E097}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXDCEFB692127841B8B77115538C778CBB">
 				<Properties>
@@ -2351,25 +2085,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX071F32B3A3FF46F58111CB316981E1CA">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{9789ECA9-0A9B-4507-86D0-1C199CA39DC9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7A3DF2C41DE9454EB2F3ACC1A2D05347">
 				<Properties>
@@ -2463,25 +2178,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX8CE28982F8F546A491A8DEFD5A54A473">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{240B9663-56D6-47AA-B007-80023D4BF3AB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX187A0EF6DA7F498AACC6096959E1A0A3">
 				<Properties>
@@ -2575,25 +2271,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5CE59C4047AB475C8F9B04BFAD2FC2C7">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E9D14E3B-BDE0-4467-99B8-D87171C58EA7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD93E137FF8934DEB8ED05261C7328668">
 				<Properties>
@@ -2687,25 +2364,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX589C179B9F144C46A43CA1A2CE723CEA">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B4AF7B84-0E89-4178-A2D8-AB6A61A66F81}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX8B2CF99FFD3846F3B4DC79476B05076C">
 				<Properties>
@@ -2799,25 +2457,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE842BC2BFA0B48A28B7E65BA4ADC8E72">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A7CC8735-77DD-4246-820C-BF7A73B5C902}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA9FF0604BCCD4B51825440660C9C5F92">
 				<Properties>
@@ -2911,25 +2550,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA5B74177F4EE4789B7C6576CD77B4606">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8B782E50-DE0C-4A1D-8628-8BBC5E13D6BB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX92B2D12354C74CDA95FBFAE81C43CA7B">
 				<Properties>
@@ -3023,25 +2643,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXD934ED7C9FBB4C31BAE2CAA44F796FDD">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A9F62197-96DA-433E-828D-2C850CC6F2EC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX136593A475384434AB78A2B398DC315A">
 				<Properties>
@@ -3135,25 +2736,6 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXED999122143546B19A5985860AB4F61C">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F8374A57-C3F5-4D27-8F8E-435450EBD058}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6D9374AD1502477BB3EF930A8DF66FEB">
 				<Properties>
@@ -3247,25 +2829,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX26C2788C114440BE90D217CB04D7EACE">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{86097975-AAD1-46E2-9022-16B0BCC86D79}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXFFE8982D939F4830BC835FF7ADA13CA7">
 				<Properties>
@@ -3359,25 +2922,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX0C1E53B3455C4C3A84ADFB34F6001B95">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F9326ECB-4F6B-47C6-97BB-AEDEA3780B01}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC1A2E17F95154CE79E94813A372C04FB">
 				<Properties>
@@ -3471,25 +3015,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX629ADAE764A84AD5A7B8FBB632F1F1E0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{872C5547-0EBF-4687-87ED-75FCBACD1F39}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4A9D8EAAFD8840EAB27E33250FC10562">
 				<Properties>
@@ -3583,25 +3108,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX1E88F5BACEA24694BC9C97D01E6EDC98">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{630EDF64-AA96-447A-94E0-8A084B63D8CE}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC71A03F759C54C91BEAF2F887FFC67F3">
 				<Properties>
@@ -3695,25 +3201,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX78A9072AE2E14A1FB784439F55675854">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8811BFDC-31AD-4841-BBA8-97FD3A0E330F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4631A09AFC394EDAB53A1ACF628943D5">
 				<Properties>
@@ -3807,25 +3294,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC49BBB2D981B41FF927A8E516D457C7B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E10FAE42-DE44-4461-A9C6-F476389B422D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX48A1420A36C74545B3191E1301B7CCE8">
 				<Properties>
@@ -3919,25 +3387,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX48631F3238764FC98D2F55A41EFC201C">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{AC40E52B-B3DB-431A-BD23-C198363F7EA0}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC93D5014091149F5B5E7FB8FA7D263C1">
 				<Properties>
@@ -4031,25 +3480,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6BAF2820FE2A4D4885ADB49925208521">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B8D5BD4B-8947-466B-A83A-221FF82DDAAA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC3570351C2ED434F81AB3A047CC8D24D">
 				<Properties>
@@ -4143,25 +3573,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXBAA43E6DFD134B128689D43C112758E8">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E11DDB0A-BF99-4DA3-8015-BFBC29923FB4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX3696C6B0162E473F8EEFC0204BF93979">
 				<Properties>
@@ -4255,25 +3666,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX276D36356FCF483EB6C776C3E3F7AB89">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{1A89ABCF-B561-4F6F-A6BF-08DEF67801C4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXFA2DD2A919AF4E33B764F3F9B84CB8F1">
 				<Properties>
@@ -4367,25 +3759,6 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6DA144108DD3414896D76108D71E165B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{7C1872D0-9153-4DF2-8A07-0808A086C4D9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX961C313DA5144A33BCC0613D3F111E81">
 				<Properties>
@@ -4479,25 +3852,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA826F15A171047C09D36FF26C5865F98">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2BA01BD7-13F2-43B5-845C-D68F4E7FFED4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX3522C350C76D4FE995D569F7DA2C5DC2">
 				<Properties>
@@ -4591,25 +3945,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX251CD0F2982C434AA8EC8883C401F022">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E79501B5-7C8C-46E7-9939-3E67CA48D3AC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB2CB172DAD2F4940AAB251D2311A9FCC">
 				<Properties>
@@ -4703,25 +4038,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6CD52A7201534EA59CE38F0A722D55E4">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{104F5FC9-723F-4BED-A5D7-33311A473AF5}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXBD973980BBF54059943C5394E27F808D">
 				<Properties>
@@ -4815,25 +4131,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXFA0C00C58DD24DB2B3B43A8F74B0D044">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8CD7F3D3-699B-4B6C-99A1-9F6ACC9861F4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6D49B156A999414D8427CB9E4FAA608C">
 				<Properties>
@@ -4927,25 +4224,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE1A85365DA554926866547809AB3029D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F54EE318-FAFC-405B-9094-040323EED20E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX3DEDE4949ABA44D48E5615E091A4F45E">
 				<Properties>
@@ -5039,25 +4317,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX02162C9911B048CBB0B27A7CA16D0FEC">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{26D89776-ED54-4F14-88B1-043F8338508C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX421ADC1588D74C918D4231AE3BE156BC">
 				<Properties>
@@ -5151,25 +4410,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7637CFF66A6F47B5A43187F7CFA35CBE">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{1098EEB6-4DD6-48CF-A3E8-848F059289CD}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX1F8F82AC315646A6B8D383EC9962DB5E">
 				<Properties>
@@ -5263,25 +4503,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5A7A26C594EE425D9052D83B6730404E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4E3DACFD-B26A-441A-AE1E-E5725574D1CA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX1DA2F0E535C4482492F298C5AF101451">
 				<Properties>
@@ -5375,25 +4596,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXD019B761548146888BE86F7F079EABA0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{45B21547-8427-4E10-8118-77109E18FBDC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0CD57DEDE02D4C2EBCDFD5D80CE422D7">
 				<Properties>
@@ -5487,25 +4689,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE300B5C63E764EA0BCA61039BA351769">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C2A34C7E-E7EE-4E98-A576-A6044563E0E9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX1D78E1E1EDB64A14B4DC16C83CF22A0A">
 				<Properties>
@@ -5599,25 +4782,6 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX00052DDB16BF4419A6CB5EE25FB7FF95">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A8D23AC0-9E40-47FF-9303-404DF9776480}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX94600C26E8574BB1A928036568A561D8">
 				<Properties>
@@ -5711,25 +4875,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB39DE2B2B2D44A97A8A962B0245AB2C9">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{EB599D77-11DA-4D10-B338-1C369DA7F128}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXF3B62D19C08440BBAA5A504EAB42E474">
 				<Properties>
@@ -5823,25 +4968,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX785F23F82F824F3197F0D152357B453A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{CBFD081A-B2AB-4141-B041-CF919487E3A7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX44D606D71D8C489497F9DC9D7886DCAF">
 				<Properties>
@@ -5935,25 +5061,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5C234E67D1134F38B68FBF93B6C2F134">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F2C1B48E-7957-4FE9-B36E-FFEE7C705EE7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB0640B07B8B640A5A6F35D7CCD37EF8E">
 				<Properties>
@@ -6047,25 +5154,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX0D028E12F31D4830A80848BF40CF1A99">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{9B5B18C1-FE7B-4604-9294-55F1BB6E5492}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA25F14854056460BB60464BFDAC00541">
 				<Properties>
@@ -6159,25 +5247,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA065AC3BA9DA4D5C9463FA1DA562F23A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{0327A6BC-BEB6-4292-B5DD-0C5DD6D33F88}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX188474CF5EE74983A768540FD7FF3F4E">
 				<Properties>
@@ -6271,25 +5340,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX8017B409EB174E9495543F69C67199F0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A8909897-304C-4967-9966-3E4C38AB3C61}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC5B1DB25A0824EEAA783E4604042278D">
 				<Properties>
@@ -6383,25 +5433,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX915C3CE0A6C94DCE9FB5301576FFA9DF">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B6D44B46-93F1-4D66-96D5-57050E173F1F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX02174CD860424B07B935545C27A52770">
 				<Properties>
@@ -6495,25 +5526,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF2131EAFCE2740F9B7402A3357165737">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3BB2CBAB-8E80-4F40-915E-AF3F9973F89F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX40CC84E84CFF429F98BAD5BBE45827D4">
 				<Properties>
@@ -6607,25 +5619,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX094B4E2F779848F783C8088650FD065D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{FC3F3DF8-7C59-4B41-B744-9D8A08E7EEF7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX143AA207B32F49A79952DCBF2AB50D80">
 				<Properties>
@@ -6719,25 +5712,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE675E65F07C646C5A15294A7E68274F4">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B100ABA4-A3A8-439F-B990-0ABF029CC171}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX8421202D15604D60B21E6C0FAFFA9E3F">
 				<Properties>
@@ -6831,25 +5805,6 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX057DDAC09DDE404AA0F658C7B07FE92D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{09133FC5-E2C0-4285-B869-BF9F234D9E3A}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD1ED8E23FC664BAB80EB3B594B18C679">
 				<Properties>
@@ -6943,25 +5898,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX187E33165405466A9942782117089142">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{04FC21AC-9640-499F-81EA-9B8456CC5A1A}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC6FA0B5049F34674BFD2D87CAE197E5C">
 				<Properties>
@@ -7055,25 +5991,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX60C35C810E2C460E88EB1381C26812CD">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{32776170-031C-468D-93F0-2DB4B776058B}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC24BAE8391C049CAB184C3B2B99C6D42">
 				<Properties>
@@ -7167,25 +6084,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXD597B35F91014B11B23EE53A79033106">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{5B4C2CAE-52B6-4B69-8850-1B0F1438152F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX1D2E92DC6DD8467593A7810A54A1CBC5">
 				<Properties>
@@ -7279,25 +6177,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX453E4BC5E0D84EF2B17FDB047BC11645">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F0BCF60F-FCEA-4060-888D-8502EBF6C6AC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7E0E9E9F540E4EC0AA9051B465175EF9">
 				<Properties>
@@ -7391,25 +6270,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7BE5884714614CA0A7C95B917C515026">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{DC18995C-CADE-4834-B360-9F667D31C44D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6CB342F561C849D49781F58DA53E2DDC">
 				<Properties>
@@ -7503,25 +6363,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX516823D78C2744B6B7FF4CF6E7045309">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{BB2B1979-8249-44E2-B940-5F297C2314F1}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX9A60B95A01AD4645B9DEF91656D5D7BB">
 				<Properties>
@@ -7615,25 +6456,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7F98A14379974BFBB9C3E161F7E45C58">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4EAADDEE-0031-462C-9E86-D418D7B6629C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0C3EC119A7C24EFF9CEF13DB22687CD0">
 				<Properties>
@@ -7727,25 +6549,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX4BEFA0A61C344CD9857F633A60A35AC1">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3826912C-3FEA-4415-A063-CB492ED1C3FC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX701950CB0BEA414EB412DBDA67CF30E1">
 				<Properties>
@@ -7839,25 +6642,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX81CC6048E4404F0FAF2BDCE61DF56302">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C713BDE3-BB4B-41A2-966B-0A623BBC6256}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4092A600D5EF41E68653390C82613605">
 				<Properties>
@@ -7951,25 +6735,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC682419A6CA84326A122C7AC7C48DE0A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{797104BB-84E0-4616-A5A7-280FA93C028D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX161C400E54BD46FDAA703599B7BB90C4">
 				<Properties>
@@ -8063,25 +6828,6 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXAC7AB51C48CF4E3AB7B652303EDB99C1">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{64EEAA1D-2CA6-4620-8004-509FF0DCD030}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX26A5222CE6EB41629FF17CD80A300677">
 				<Properties>
@@ -8175,25 +6921,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF2C995954CB043788F51F22368EFB031">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{14DA0436-7694-4120-8BF2-E895E3AF88C6}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX5B3AC6B6FAB34C7DAB4664A377DD73D2">
 				<Properties>
@@ -8287,25 +7014,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA11DB7BC9C70434EB0FED1F597D2B4B4">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3E474A7F-33A5-4D36-B8D0-2ABA9DC1F4CC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4F553E4C98B540ED96D087E776A6DE64">
 				<Properties>
@@ -8399,25 +7107,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX308E2B29DE0F4F168C02A41558C1D8E0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F0498E8A-B89D-4420-999C-E026926B934C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7C10E86619724A728EA5B15C4BA23D08">
 				<Properties>
@@ -8511,25 +7200,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX9CF5C90CB9394D119EDC3C6E071ADFE9">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{7DDD0EAF-4CBE-4A01-A222-F672E8274A08}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7A6008E88B20457393C4DE396051B7AD">
 				<Properties>
@@ -8623,25 +7293,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6263B1F248724F1CB7B3B64B509AA07B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F047D826-0FA9-40C0-9F0C-418ECBD4253F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX3F2B863CDD2C40BAA2DFF18DECD25C58">
 				<Properties>
@@ -8735,25 +7386,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXAC9ECF9822A4435EA6679012B00159F6">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B335235C-7026-4F81-9AB0-075E16ABB488}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX3EC415615DF54DF1B265AF41590D82EF">
 				<Properties>
@@ -8847,25 +7479,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX166EAC58DBE04DFF85125198EF06612A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{236DF3D9-358D-42AD-896F-CD80410C50F9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXE3A5BA4E27E84EC6BFDD31329DC0B922">
 				<Properties>
@@ -8959,25 +7572,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX99FE9B067BBB4072AC07C90A9A55578B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A6D42C5D-E955-4AB7-9622-7094E7E10B65}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX04C422DFDC1A42D7A2E3FED00BA69153">
 				<Properties>
@@ -9071,25 +7665,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXDD16BD87A3D14DC2921358D4C81E9E7B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{45E298DA-48AA-4380-A830-6708D7D83809}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX15D4D3118BDE44D983CCC8F3F1810DE0">
 				<Properties>
@@ -9183,25 +7758,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA4B5F23E8E4D40D2858227AB72DCFC0D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3F9DFDBC-9454-46AB-9FFF-B4B5527C1A3C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0871BFD8279D46B6993B01A320671FA3">
 				<Properties>
@@ -9295,25 +7851,6 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXCD62EB8CE76442C98E6CCBA7A2520B6A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A9D11FCC-723C-4511-BFBF-DD8A51E235DB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXCB1D0AE8769D46929760D708C9620318">
 				<Properties>
@@ -9407,25 +7944,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX2D488305F98341B49550A5B618A6BF3B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{6FBE752A-17EA-44D3-BC80-D74EC404D389}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX14118A89ED5E4743B3B429E42F0A1B58">
 				<Properties>
@@ -9519,25 +8037,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX3B9F069734A945FFA3C09224EFDF5C12">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2D027B6A-E90D-486F-91A2-EB31A44F6CB5}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0B0C2D2988E84FB8AAC1F27157F15743">
 				<Properties>
@@ -9631,25 +8130,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXBEB2D217E19344A1AE1A17AB77510CFE">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{BE506918-8EE2-4E93-9028-B14BCDE0388E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX07041B29B75445C4964CE828BEACE16D">
 				<Properties>
@@ -9743,25 +8223,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7A33386541614CCE8FC4CFE0199CD379">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{03D38CD3-87E9-45A3-AA09-1A4C35812AB4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXE0BFA155A89F4E1794E646299A2C8F91">
 				<Properties>
@@ -9855,25 +8316,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7B226568CF754CBFB685567122364710">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{82C90F3D-DDAF-41DD-B264-C7D2387C39A0}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXACE9E90B925F4C70AACBFD15DDE71193">
 				<Properties>
@@ -9967,25 +8409,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXAB18BFECF2E04744AA2AAF9F6C3DB018">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{129DDE5E-80E4-4BD5-873F-764A5AF82233}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC8F6768164FB4051AF1A8E9CE2212B79">
 				<Properties>
@@ -10079,25 +8502,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXDC63195DBB5D41C5AEB26710AD8EF9AA">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{CDBDBF55-06A0-4908-9286-CABCB8A3FB42}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA933DFB82F1A4360816C1531CAAB1FF4">
 				<Properties>
@@ -10191,25 +8595,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB9B8FC5E9C9043A6AF62295FDC370AB5">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{459315E9-B899-43F4-BC49-5D282ACB46BA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC737308FBFEB475CABB52A71896C6E90">
 				<Properties>
@@ -10303,25 +8688,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF9EE569B4C014BA3BF708549F6541B3F">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{9D11D2D8-A361-463E-8F1E-80B343EBE145}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXDAD9A5D8FACC4CD588CC1A81DDD90C89">
 				<Properties>
@@ -10415,25 +8781,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC0EB0186DAF54499B415DF3E65232AD2">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{71031A0D-77A2-47D6-8034-08A9B1AB7F2E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0F4D5DB20E05496A97E6077A86B85C04">
 				<Properties>
@@ -10527,25 +8874,6 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX87F182C798B648B7BA3EE807BFFBD63F">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F7CF71BE-52E2-4726-879B-002AE29EFFD6}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX2AB1F34EBA5E4523801C5E46F1A34600">
 				<Properties>
@@ -10639,25 +8967,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX905612BE6CA241369291E2E276591A86">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C0A48A8D-346F-4A12-B171-4FF8600E13E8}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX42764F0069F148FDBB93E9E510DD2474">
 				<Properties>
@@ -10751,25 +9060,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX586D03C7205F44509CE8D459CB9B8C04">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E3FF7264-D3C2-425E-AFB2-4FF49363591D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC90B8FBB2F6E4673A360F5741B991D9E">
 				<Properties>
@@ -10863,25 +9153,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX14F80A4AE2C746FCBA275E7367FBCC83">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B9F2702E-45B8-4842-80CD-C497389ABCD8}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7CCA945B9C7348478C271AD8FBA1FCBE">
 				<Properties>
@@ -10975,25 +9246,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX29867D4E05644F039AE77A3A568BE5F0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{90BBED66-A26E-4C61-9D92-CA73CE0BB98E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXE799DE3BF13A4A82890B02BA0208B18B">
 				<Properties>
@@ -11087,25 +9339,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF9019ABEB5334C13BB4FE0C80F732D83">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{BF751827-AC96-419B-854F-30FFF5FB2D4D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC8CA5474EF044BF6B23DDA3298992460">
 				<Properties>
@@ -11199,25 +9432,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB6DBFE3289634248891639287DB45FE0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{95427B5A-62EF-4327-8D67-A4DB20EC04C4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4AC7C45643174C589954B4629072CB34">
 				<Properties>
@@ -11311,25 +9525,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5586F0EEDF1C43C49B0E0E44E7B99588">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{712ABA38-632C-464A-B9D0-C72B7806C7B4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXBA5AAA3614FA4F82A8C729B6101737A8">
 				<Properties>
@@ -11423,25 +9618,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX43BE3F5F57214A79AFD363937101DB8F">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{68A583E1-4697-433D-B235-F52C359DC20E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB8F7D01366A24E8DB041E7B1AF6B623E">
 				<Properties>
@@ -11535,25 +9711,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB350B09006E74F378AFFBB95D9F96567">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8F09AE43-6F64-4009-9F6D-373EB1B9445D}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX71BF8D57DF1C44BA810188F3893129C8">
 				<Properties>
@@ -11647,25 +9804,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX554CFB458268474CA7CABE5F0816178A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{00FC1F8C-3935-4E73-8A30-8C3D2379F1E9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD3B1FC64D7694ACC96348D4668A8A50D">
 				<Properties>
@@ -11759,25 +9897,6 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC6A0071DA9FE4B7EA5F71BE68D917C62">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{70AE860E-6CAA-4357-B5E1-97B2844C9D72}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX79FB7D765F894A96AC8F3E96876C72BF">
 				<Properties>
@@ -11871,25 +9990,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXCD5CF6F927634345BFBA19634587E8D6">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8870CDF0-61E4-41E1-9B27-1F0046CC4872}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXFACB61FEE88145A580E6530BD9511FA0">
 				<Properties>
@@ -11983,25 +10083,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX0FA40A6E96254E92A2A7EB23A0DC5D03">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{0FAB2BA0-DA6A-49D8-9699-8D107C8F13FB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXF750BC30B1EE4EC5A8E13E10FB11EA8C">
 				<Properties>
@@ -12095,25 +10176,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX3DA69551DD1D4C039918449886BB84DF">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{CEFC2C63-F56F-43F4-8A5B-4D1E5BD51424}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXBDA49D88B409436CB208F7C4D15DE010">
 				<Properties>
@@ -12207,25 +10269,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5D35101EF63E443585936DF9E1FC7CFF">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{634833CF-4292-4FA3-A584-772147453EB2}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4E8CFCBD0699491EB0FA333BE406E8AC">
 				<Properties>
@@ -12319,25 +10362,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX09F4629D39EC4C33ABEDD5E0F6029F69">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{DD31038E-BCCC-4329-9FD5-2DE30EC9D288}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX50459C160CF34FAF9BFC9B0751D3C0BC">
 				<Properties>
@@ -12431,25 +10455,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX69D8981B1C1B4BD9B3DF9F18CEB62D03">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{BB5D47C6-A9E3-466A-AEEC-C024FE76EADE}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6D7D60042513457AB20CB9FD2502F078">
 				<Properties>
@@ -12543,25 +10548,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXDD8C76C7B2924F69A2C4B388E2471FA6">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A6BE8723-0EE4-471F-94CC-679DCEFA63FB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXACDA241FC3BC4D37BCCEA02F651879D4">
 				<Properties>
@@ -12655,25 +10641,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX48C65826E3544D7293D49B6B28D3F700">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B67636EA-98A5-4313-A747-46D51FC183A3}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXBAE10D31BC97447F94E46502F23566FC">
 				<Properties>
@@ -12767,25 +10734,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXFBB3DBC7EB6040AF92FC256D4B74778E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{AF972DB9-7012-4825-B205-9A048E1F60F5}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA29954FC88734D89A2C77F68B24838FB">
 				<Properties>
@@ -12879,25 +10827,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX42BB25FBC05D4B5DAA3ADFAB576D9DAB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E5465955-E7F6-4A95-81B7-D0FAEECE54F7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXCA873E9BF1C745F4A0037588919B9E27">
 				<Properties>
@@ -12991,25 +10920,6 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX398A36E1721B4D67BD81078C5F4AED3B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{7CD68154-BDC1-49F9-BB60-575E64D30B69}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX474A9B8D290949FF8FED5779B0E3EE3A">
 				<Properties>
@@ -13103,25 +11013,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF8F66411660542EAB5122F7A68DE9F94">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{874B65F8-96F9-4DED-81E6-C3E35830704C}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX208A8D1C38544B69AB74F794C4F800AE">
 				<Properties>
@@ -13215,25 +11106,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX70439FE062FE4A01AF4810264D003EF2">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{D88D575B-C8A8-4680-A106-3E1EA82A14BA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC1538F0339DB421E99BB73AFE4E6E0F8">
 				<Properties>
@@ -13327,25 +11199,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX7E0F80D6C0D54FE5AD4E6905EB23B083">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{AA5FB9E9-52D2-459F-8E33-68389A1BA9CC}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXCF2D521E3BE84A5CAD8AFA27AA2E3090">
 				<Properties>
@@ -13439,25 +11292,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX3BBEC7B326D6499DA541AC5821695E8A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{DAE24A73-1BF4-44BA-AD4B-BCF465984A17}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC589CD2804064EC5A571BC4B7C4E6D3F">
 				<Properties>
@@ -13551,25 +11385,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF8CD844A98A2421B8574234665ABF3A3">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F545D0AE-3007-4E87-B64D-9D5D5E42B4FB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX315CC7D1A10544EAB34DE1AB706496BE">
 				<Properties>
@@ -13663,25 +11478,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX9E3120421ABA41A591724E35A2BA438D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4C8490C0-A919-4977-A5FA-D296611B8781}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX947E8194D3584A83B197C5723D447D6C">
 				<Properties>
@@ -13775,25 +11571,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX12D542BCD1A24D4EB5A41F9B41D9960D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{8F1862F8-7397-46FB-B006-4A92E0ADCA26}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXE2B384A94D784F6EBECB95C5A42584FD">
 				<Properties>
@@ -13887,25 +11664,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX9898E0CA22A949ECA5A73BDB3C1FBAFA">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{6EFF07D5-93E7-403E-9938-8F25994C46E6}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB6FBF2B19F52480F982481D323C3F547">
 				<Properties>
@@ -13999,25 +11757,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE68AD5EB9A624CC7A20E900DCB606DF8">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{09B08417-54B8-45D5-9A1B-5D0C115A33AF}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXCEEB7220D2B04714A66DFEA75E4A2643">
 				<Properties>
@@ -14111,25 +11850,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXA2A73D17263440FCB79FC037E26624DC">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{90EC5D95-4CB0-4118-947A-1C8AAEF150E9}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX07FA4C1D4EB54212B8F5E5339A9FEFAE">
 				<Properties>
@@ -14223,25 +11943,6 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB32ABEDEE7F8498BBE42F475D96F38CB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{09AF186E-0D2A-4895-9371-90CA2CFC1964}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 		</Item>
 		<Item class="Folder" referent="RBXDD2E8BC8CBB24CFAB4C904A3CE5D4655">
@@ -14342,25 +12043,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC0AEBA5E44B94BBCA9270505242DF7AD">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{ED0C8BF6-C7F8-448D-9140-4993BE9AB9FE}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX9E6A8E684C6941A2A581F0829BCA5A01">
 				<Properties>
@@ -14453,25 +12135,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE5B6E4863B1F4A92B778F548D51DC361">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B4CD912E-54A0-4CDE-BC37-33887169F9D1}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC136C0489FEB45FFB7D7D282CDBF5897">
 				<Properties>
@@ -14564,25 +12227,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE5D47748EE42445D97CEE2C52B0AA722">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2F63E7E5-A91A-452E-9111-3C0415A6FCD3}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4DF7B8E7D5284B699234A01F2E70A86A">
 				<Properties>
@@ -14675,25 +12319,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC7240D7DFEC94E87B3D8E86850F7B131">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B022719F-A5E5-4925-8B51-0AC256B33492}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXF87F462FCB1542A4894D38477EC071C5">
 				<Properties>
@@ -14786,25 +12411,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXCD5A75E0132542AD85546F6DC6CBF3EB">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C0A2A3DE-FF85-4554-99AE-9E9B3ABC278A}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX93A58BD6B9B84DF391AC92375C96E96D">
 				<Properties>
@@ -14897,25 +12503,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXFCD4D0A640754334BBAFDE0C2A569AAD">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2C55B7C5-8214-4803-9435-8133E51BBFA7}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4EDA0E3BB9B441D0BCEB01A21601848A">
 				<Properties>
@@ -15008,25 +12595,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX202F2E192083465D9C8AF8B117AAA84B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{71A28314-3B25-4103-83FE-31CEED080E74}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6365AEDBC6084C8AB3B7FE662C35420B">
 				<Properties>
@@ -15119,25 +12687,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX95410B22024D47F8A8C711EC38D44652">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C5DE1968-ECFC-4C02-B6A8-C4B1330287FA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX0D32E9A7FB7646A5B721ED89640A5D64">
 				<Properties>
@@ -15230,25 +12779,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX834B11EC970D4CB68C654DAA6758DEC3">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{56BFE653-F5CF-4A43-9988-ED288379BE75}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX4582E0FC80B346DD8A1444C84E78B629">
 				<Properties>
@@ -15341,25 +12871,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXBF5913483D7045A1A9ADBF3E5739BE31">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{A3DB1534-B9B2-4AE5-9811-646D649F2E83}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX2AD9DF30F3D34324A5661FB02752B427">
 				<Properties>
@@ -15452,25 +12963,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF8189E863EF4465CB89E9AE82F6B92A2">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{2C7F0E85-463F-4C35-98E4-D653B4EA7D9E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6B53530C269E4D3F8BDB6FB2A6C11E96">
 				<Properties>
@@ -15563,25 +13055,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXFA85998D28774AB198925BD4EFDA52F1">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{D3A27A40-BA22-4480-90F5-244488C95FF3}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX88237F54093B4B0AA515CB7FF0FFF2FA">
 				<Properties>
@@ -15674,25 +13147,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5F80D864AF1C45F984AA07E2D3EC2CE2">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{7798EEF9-3B7E-4C72-9D8A-30CEAA5FE81F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX6E78C028B19A4C2BA4FAEEA73FDDABF1">
 				<Properties>
@@ -15785,25 +13239,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX0AD806838A1744B8911EB6E69E12BE9C">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{7A1006F4-8013-40AA-9603-371D552B66FA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX437EB7FF5A49414CBB77BC0662F56426">
 				<Properties>
@@ -15896,25 +13331,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX10121FBC3BC34C7889BD50F710465B2B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{AA0B8CEC-7D85-42CB-9FDC-5652ACD9BF81}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXE2093CE98D604452A1AB041142CDE9D5">
 				<Properties>
@@ -16007,25 +13423,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX584510A6DB64477B8321BCC97E8A80CC">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{D2A2CB8D-60BA-4B98-9281-F69CDF0BD661}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX19F8FA44942C46E2896E4E36CA7C0B51">
 				<Properties>
@@ -16118,25 +13515,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX871FC19D17D04441B3D34428D503045C">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{6B1159CB-E16A-46C0-B04C-159BEA437911}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX15FD7AAA73B1433DA98C1BFB44831823">
 				<Properties>
@@ -16229,25 +13607,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX3007E726350F44879AE103E263AABA33">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{65832C69-95F2-4F84-9391-906A9246F14E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX150D9D9243594A39BB87E42E74D1D213">
 				<Properties>
@@ -16340,25 +13699,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX9FCD06C8873641A0BEFA12F0A12E0BD5">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{BF6E980D-98F1-41D6-AF26-BB08BE3D4457}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXA132FC0741974ABDB0431005C9BBE27C">
 				<Properties>
@@ -16451,25 +13791,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX830ECE108A9F4A9C9C82BADF899044B3">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{C3EF2D60-5000-4751-BD02-71A76D5DB7E4}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXC5B33629E2AD477394DDD61C0E6AF7E0">
 				<Properties>
@@ -16562,25 +13883,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC8BE10FB264C42369F8A69EA9D7BB159">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{154C7930-7BD6-4021-8F80-87E03E81CD73}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXB7502A9ECE074DC7B26C3926D2F6E1B2">
 				<Properties>
@@ -16673,25 +13975,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX4B3E2A777E9749D48438A9998A2FBBA7">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3F598223-5104-4C40-ACE3-AF46D685A775}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXAB48AC07E4834F7DAFF6F53028FE35E5">
 				<Properties>
@@ -16784,25 +14067,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX93BE5288BAFE48F1A2BC149C024B0F2B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{81D220AD-4118-4D34-8B55-DA88118674A5}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX57A8F9758A844DC38BD72935859F8810">
 				<Properties>
@@ -16895,25 +14159,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXE38EB3428361472A908E77215509F636">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4D134DAD-CE6A-4453-9028-11A3BD10289E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX486447A5C501422E88C68C89A1CFACCF">
 				<Properties>
@@ -17006,25 +14251,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5888C1E41753409E84EB6601499AD02A">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{6EB08B0E-2ACB-4E88-AEFA-4E1AE05C44B0}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX42CBB0B90A3145E1A3A52FCECF605610">
 				<Properties>
@@ -17117,25 +14343,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX4CA346DBE42440EFA30D5DEE9C0D2B6B">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{1C367D50-7407-4B06-96D0-8D56ADC78F9B}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX5B855FB8782F4BEB898C561A9EF5872F">
 				<Properties>
@@ -17228,25 +14435,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXCB70B1D0E65048F1BFAB8EB0FA8A6221">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{F579DB2A-5C87-4729-9329-261A118BEBFE}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX7F4EE432C00747B882CF47B88F837D8E">
 				<Properties>
@@ -17339,25 +14527,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX25583565C07B4909B06323A7A6CE7AF4">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{213B6300-DDB2-4542-9298-D85C570ADADE}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX9F733753024F45DB916521F0945A08F2">
 				<Properties>
@@ -17450,25 +14619,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX5304D26154F840E983868038D217DD25">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{3D84C2FA-0920-4B16-919C-0DC2217E7178}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXD205992A43C442D2B12C3314D41053E0">
 				<Properties>
@@ -17561,25 +14711,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXBD4808987A3F4AC4B5BAF1DE22A014A7">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{FC0EE0B2-B84D-4976-8945-671195C1C6DB}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX8AB989BCE0D242DD88344736C8B770F4">
 				<Properties>
@@ -17672,25 +14803,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX1CB252FB58B74EFB8C4621D72AD3514D">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{CE570B5B-7338-4BD3-BB77-1C81DFCC4D5B}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX2EE03E66DB874A50A9724E38B178146E">
 				<Properties>
@@ -17783,25 +14895,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC24E8D7B621949ADADF063A74DC4855F">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{DF16F9FA-2915-4815-8886-0297104A1545}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX91D415BF22F0431D9EE61A99B17EEABF">
 				<Properties>
@@ -17894,25 +14987,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6153D20C598341BD8EB3A8EBAC0466D9">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{43A746EE-73D1-4EA5-81C7-87D151226D0E}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX5C9623D831B94C759B1CDAF3417038F4">
 				<Properties>
@@ -18005,25 +15079,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC4CF49E11F154A9692FA5D02D74E02DF">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{221D7C11-5224-4FF7-93C5-2BB36AB5E558}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX2207FB9255BF4A11899523EB8E10D320">
 				<Properties>
@@ -18116,25 +15171,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX473EDE01488B4E95BB7A9125920B15EF">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{4C1F3D46-5202-4F6F-B825-34E6C3EDA286}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX56C1CAEDA3D14EB3B0CA4F283B75C5AD">
 				<Properties>
@@ -18227,25 +15263,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXF01D8695488849D78CFF7F0BC96790F6">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{63F6FA27-7ECD-4D8C-BF20-A600A0594C48}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXEA7CBC03280143DEBCBDD82153636391">
 				<Properties>
@@ -18338,25 +15355,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXC276E8B35DD6447BAAA18DCF850A5D9E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B3627032-F4EC-469E-B6E0-D0289C50D255}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX9692BB942B8B47F4A85A93C8B55B0EAC">
 				<Properties>
@@ -18449,25 +15447,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX14365F9BF9F344248395473A622FE44F">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{75DD3949-BD40-4691-9656-8448B871B5FA}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX5BE0114A534F4A9CA94A1B0172E05F25">
 				<Properties>
@@ -18560,25 +15539,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX174922A1AD0B45CB8ECC11755D880C3E">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{E828A9C3-05D5-43E3-B2F9-AA25E9C9E706}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX015ACEB245814FA69AC1F9B5667201C1">
 				<Properties>
@@ -18671,25 +15631,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBXB2466F94E13D4B778A1AA891DCA74CF9">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{B04E7410-3FB7-47B0-BAAF-648A166DBEF5}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBXFE367A757A3943C780D1575E8BD28B6F">
 				<Properties>
@@ -18782,25 +15723,6 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX6C5CC3B51078405999677C56D5A77DB0">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{49E810D4-14BD-4D5A-8262-9A49E278C22A}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
 			<Item class="Part" referent="RBX788D3C4A2EFF45D4B970055795846232">
 				<Properties>
@@ -18893,26 +15815,135 @@ end)]]></ProtectedString>
 						<Z>7</Z>
 					</Vector3>
 				</Properties>
-				<Item class="Script" referent="RBX71305B2E54464B7DA5BE9AA4278E57D9">
-					<Properties>
-						<BinaryString name="AttributesSerialize"></BinaryString>
-						<bool name="Disabled">true</bool>
-						<Content name="LinkedSource"><null></null></Content>
-						<string name="Name">killOnTouch</string>
-						<string name="ScriptGuid">{576A6AEE-0FB2-4E6C-A221-DA103E8C205F}</string>
-						<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
-    
-    local h = player.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
-    end
-end)]]></ProtectedString>
-						<int64 name="SourceAssetId">-1</int64>
-						<BinaryString name="Tags"></BinaryString>
-					</Properties>
-				</Item>
 			</Item>
+		</Item>
+		<Item class="Part" referent="RBX143A2C47724B49EEA7B8C28613AC0697">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>-36.4999886</X>
+					<Y>3.49999976</Y>
+					<Z>35.0999985</Z>
+					<R00>-0.999999404</R00>
+					<R01>-9.31322575e-10</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>-2.91038305e-10</R11>
+					<R12>0.99999994</R12>
+					<R20>9.31322575e-10</R20>
+					<R21>0.999999583</R21>
+					<R22>-2.91038305e-10</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<bool name="CanTouch">true</bool>
+				<bool name="CastShadow">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Bomb</string>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">0</token>
+				<Vector3 name="size">
+					<X>7</X>
+					<Y>7</Y>
+					<Z>7</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBXF5BB45AD833046CCB563FABBB9C5E58D">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>rbxasset://fonts/timebomb.mesh</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>2</X>
+						<Y>2</Y>
+						<Z>2</Z>
+					</Vector3>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<Content name="TextureId"><url>rbxasset://textures/bombtex.png</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Folder" referent="RBXBA7D0FD5CAC44B949CC5680245192049">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<string name="Name">Crates</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
 		</Item>
 	</Item>
 	<Item class="SoundService" referent="6">
@@ -19408,23 +16439,7 @@ local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 
-local neighbours = {}
 local power = 2 --Users power
-
-local function testTouch()
-    for _,v in pairs (neighbours) do
-        local toKill = v:GetAttribute("killOnTouch")
-        if toKill then
-            for _,p in pairs(v:GetTouchingParts()) do
-                
-                local player = p.Parent:FindFirstChild("Humanoid")
-                if player then
-                    player.Health = 0
-                end
-            end
-        end
-    end
-end
 
 local function createBomb()
     local clone = bomb:Clone()
@@ -19453,8 +16468,6 @@ local function filterPlayers()
     return players
 end
 
-
--- createBombRay(playerBomb, "UpVector", orientation)
 local function createBombRay(playerBomb, directionVector, orientationNumber)
     local radius = 1
     local origin = playerBomb.Position
@@ -19486,7 +16499,8 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
     killRay.Anchored = true
     killRay.Parent = workspace.Rays
     killRay.CanCollide = false
-    
+    killRay.Transparency = 0.4
+    killRay.BrickColor = BrickColor.Red()
     --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     
     if raycastResult then
@@ -19494,78 +16508,28 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         local hitPos = raycastResult.Position
         if hit and hitPos then
             hit.BrickColor = BrickColor.Red()
-            print(hit.Position.Z)
-            print(playerBomb.Position.Z)
-            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
-            local touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            local touchPartDirection
+            if directionVector == "UpVector" then
+                touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
+            else
+                touchPartDirection = playerBomb.CFrame.RightVector * (hit.Position.X - playerBomb.Position.X)/2 
+            end
             local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
             killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
+
+            print(hit.Name)
         end  
     else -- It didnt hit anything
-        --print("Didnt detect")
         killRay.CFrame = CFrame.new(midpoint,origin)
         killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     end
-
+    
+    local killScript = script.Parent:FindFirstChild("killOnTouch"):Clone()
+    killScript.Parent = killRay
     return killRay
 end
 
-
-local function createBombRayX(playerBomb, directionVector, orientationNumber)
-    local radius = 1
-    local origin = playerBomb.Position
-    local powerRange = ((power * tileSize) + tileSize/2)
-    local orientation = orientationNumber or 1
-    
-    local direction
-    if directionVector == "UpVector" then
-        direction = playerBomb.CFrame.UpVector * powerRange * orientation
-    else
-        direction =  playerBomb.CFrame.RightVector * powerRange * orientation
-    end
-   -- local direction = playerBomb.CFrame.UpVector * 100
-
-    --Ray will go through players
-    local playerCharacters = filterPlayers()
-
-    --List of things to filter out
-   local raycastParams = RaycastParams.new()
-   raycastParams.FilterDescendantsInstances = {
-        playerBomb, 
-        playerCharacters,
-        workspace.Rays:GetChildren(),
-        workspace.Tiles:GetChildren()
-    }
-    local midpoint = origin + direction/2
-    local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
-    local killRay = Instance.new("Part")
-    killRay.Anchored = true
-    killRay.Parent = workspace.Rays
-    killRay.CanCollide = false
-    --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
-    
-    if raycastResult then
-        local hit = raycastResult.Instance
-        local hitPos = raycastResult.Position
-        if hit and hitPos then
-            hit.BrickColor = BrickColor.Red()
-            -- print(hit.Position.Z)
-            -- print(playerBomb.Position.Z)
-            --local touchPartDirection = playerBomb.CFrame.UpVector * (((playerBomb.Position.Z + hit.Position.Z)/2)-hit.Position.Z/2)
-            local touchPartDirection = playerBomb.CFrame.RightVector * (hit.Position.X - playerBomb.Position.X)/2
-            local newMid = origin + touchPartDirection
-            killRay.CFrame = CFrame.new(newMid,origin)
-            killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
-        end  
-    else -- It didnt hit anything
-        --print("Didnt detect")
-        killRay.CFrame = CFrame.new(midpoint,origin)
-        killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
-    end
-
-    return killRay
-end
 
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
     local x = hit:GetAttribute("x")
@@ -19578,7 +16542,9 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
         playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
         playerBomb.Rotation = Vector3.new(-90,0,0)
         playerBomb.CanCollide = false
+        playerBomb.moveUp.Disabled = false
         --Debris:AddItem(playerBomb,2.1)
+        wait(1.5)
 
         --  p = plus
         --  m = minuse
@@ -19586,8 +16552,8 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
         local Zm = createBombRay(playerBomb,"UpVector", 1)
 
         --Must change inside function from z to x for position/Cframe/size
-         local Xp = createBombRayX(playerBomb,"other", 1)
-         local Xm = createBombRayX(playerBomb,"other", -1)
+         local Xp = createBombRay(playerBomb,"other", 1)
+         local Xm = createBombRay(playerBomb,"other", -1)
 
          local activeRays = {}
          table.insert(activeRays, Zp)
@@ -19595,19 +16561,10 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
          table.insert(activeRays, Xp)
          table.insert(activeRays, Xm)
          table.insert(activeRays,playerBomb)
-         print(activeRays)
-         wait(2)
-
+         
          spawn(function()
             for _,v in pairs (activeRays) do
-                v.Touched:connect(function()
-                    print("Touched")
-                end)
-            end
-         end)
-         spawn(function()
-            for _,v in pairs (activeRays) do
-                Debris:AddItem(v,2.1)
+                Debris:AddItem(v,0.1)
             end
          end)
 
@@ -19625,8 +16582,7 @@ end)]]></ProtectedString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">killOnTouch</string>
 					<string name="ScriptGuid">{B21D3004-7A24-4644-B284-52BB82FB3995}</string>
-					<ProtectedString name="Source"><![CDATA[wait(.01)
-script.Parent.Touched:Connect(function(player)
+					<ProtectedString name="Source"><![CDATA[script.Parent.Touched:Connect(function(player)
     
     local h = player.Parent:FindFirstChild("Humanoid")
     if h then
@@ -19765,16 +16721,30 @@ end)]]></ProtectedString>
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Script" referent="RBXFAC4AF45958F4668B94B5875A9D0953C">
+			<Item class="Script" referent="RBXA9A5BEFA273B4EF281257B6D8F263F76">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
-					<bool name="Disabled">false</bool>
+					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Script</string>
-					<string name="ScriptGuid">{40A172F0-7A50-4E96-89B2-4A2C1A7A47DF}</string>
-					<ProtectedString name="Source"><![CDATA[script.Parent.Touched:Connect(function()
-	print("Touched")
-end)]]></ProtectedString>
+					<string name="Name">moveUp</string>
+					<string name="ScriptGuid">{E2971CD9-89D0-482B-B408-C5EBC41D9429}</string>
+					<ProtectedString name="Source"><![CDATA[local part = script.Parent
+local value = 20
+while wait() do
+	local b = value
+	for i = 1,value do
+		part.Mesh.Scale = part.Mesh.Scale + Vector3.new(0.02,0.02,0.02)
+		wait(0.001)
+		if i == value then
+			local a = value
+			for z = 1,value do
+				a = a - 1
+				part.Mesh.Scale = part.Mesh.Scale - Vector3.new(0.02,0.02,0.02)
+				wait(0.001)
+			end
+		end
+	end
+end]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
