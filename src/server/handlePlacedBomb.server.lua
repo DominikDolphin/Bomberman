@@ -80,7 +80,7 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         playerBomb, 
         playerCharacters,
         workspace.Rays:GetChildren(),
-        workspace.Tiles:GetChildren()
+        workspace.Tiles:GetChildren(),
     }
     local midpoint = origin + direction/2
     local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
@@ -96,7 +96,7 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         local hit = raycastResult.Instance
         local hitPos = raycastResult.Position
         if hit and hitPos then
-            hit.BrickColor = BrickColor.Red()
+            print(hit.Name)
             local touchPartDirection
             if directionVector == "UpVector" then
                 touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
@@ -106,11 +106,18 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
             local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
             killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
-
+            
+            if hit.Name == "Bomb" then
+                hit:SetAttribute("explode",true)
+            end
             if hit.Name == "Crate" or hit.Parent == "Crates" then
                 dropRandomPowerUp(hit)
                 hit:Destroy()
             end
+            if  hit.Name == "PowerUp" or 
+                hit.Name == "SpeedUp" or 
+                hit.Name == "MelonUp" 
+            then hit:Destroy() end
         end  
     else -- It didnt hit anything
         killRay.CFrame = CFrame.new(midpoint,origin)
@@ -120,6 +127,29 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
     local killScript = script.Parent:FindFirstChild("killOnTouch"):Clone()
     killScript.Parent = killRay
     return killRay
+end
+
+local function explode(playerBomb)
+    --  p = plus | m = minus
+    local Zp = createBombRay(playerBomb,"UpVector",-1)
+    local Zm = createBombRay(playerBomb,"UpVector", 1)
+
+    --Must change inside function from z to x for position/Cframe/size
+    local Xp = createBombRay(playerBomb,"other", 1)
+    local Xm = createBombRay(playerBomb,"other", -1)
+
+    local activeRays = {}
+    table.insert(activeRays, Zp)
+    table.insert(activeRays, Zm)
+    table.insert(activeRays, Xp)
+    table.insert(activeRays, Xm)
+    table.insert(activeRays,playerBomb)
+
+    spawn(function()
+        for _,v in pairs (activeRays) do
+            Debris:AddItem(v,0.1)
+        end
+    end)
 end
 
 
@@ -143,8 +173,19 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 					playerBomb.CanCollide = false
 					playerBomb.moveUp.Disabled = false
 					--Debris:AddItem(playerBomb,2.1)
-					wait(1.5)
 
+                    spawn(function()
+                        playerBomb:GetAttributeChangedSignal("explode"):Connect(function()
+                            explode(playerBomb)
+                        end)
+                    end)
+					wait(1.5)
+                    
+                    if playerBomb:GetAttribute("explode") == false then
+                        --explode(playerBomb)
+                        playerBomb:SetAttribute("explode",true)
+                    end
+                    --[[
 					--  p = plus | m = minus
 					local Zp = createBombRay(playerBomb,"UpVector",-1)
 					local Zm = createBombRay(playerBomb,"UpVector", 1)
@@ -165,6 +206,7 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 							Debris:AddItem(v,0.1)
 						end
 					end)
+                    ]]
 
                     hit:SetAttribute("isOccupied",false)
 				end

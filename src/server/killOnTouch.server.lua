@@ -1,7 +1,10 @@
-script.Parent.Touched:Connect(function(player)
+script.Parent.Touched:Connect(function(hit)
     
-    local h = player.Parent:FindFirstChild("Humanoid")
+    local h = hit.Parent:FindFirstChild("Humanoid")
     if h then
         h.Health = 0
+    end
+    if hit.Parent == "availablePowerUps" then
+        hit:Destroy()
     end
 end)
