@@ -5,7 +5,7 @@ local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 local avPowerUps = game.Workspace:WaitForChild("availablePowerUps")
 local power = 2 --Users power
-
+local StatsCloud = game.ServerStorage:WaitForChild("StatsCloud")
 local function createBomb()
     local clone = bomb:Clone()
     clone.Parent = game.Workspace.Bombs
@@ -124,42 +124,52 @@ end
 
 
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
-    local x = hit:GetAttribute("x")
-    local z = hit:GetAttribute("z")
-    
-    if x and z then
-        hit:SetAttribute("isOccupied",true)
-        --print(x .." | " ..z)
-        local playerBomb = createBomb()
-        playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
-        playerBomb.Rotation = Vector3.new(-90,0,0)
-        playerBomb.CanCollide = false
-        playerBomb.moveUp.Disabled = false
-        --Debris:AddItem(playerBomb,2.1)
-        wait(1.5)
 
-        --  p = plus
-        --  m = minuse
-        local Zp = createBombRay(playerBomb,"UpVector",-1)
-        local Zm = createBombRay(playerBomb,"UpVector", 1)
+	local findPlayerStats = StatsCloud:FindFirstChild(player.Name)
+	if findPlayerStats then
+		local melons  = findPlayerStats:FindFirstChild("Melons")
+		local melonsPlaced  = findPlayerStats:FindFirstChild("MelonsPlaced")
+		if melons and melonsPlaced then
+			if melonsPlaced.Value < melons.Value then
+				melonsPlaced.Value = melonsPlaced.Value + 1
+				local x = hit:GetAttribute("x")
+				local z = hit:GetAttribute("z")
 
-        --Must change inside function from z to x for position/Cframe/size
-         local Xp = createBombRay(playerBomb,"other", 1)
-         local Xm = createBombRay(playerBomb,"other", -1)
+				if x and z then
+					hit:SetAttribute("isOccupied",true)
+					local playerBomb = createBomb()
+					playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
+					playerBomb.Rotation = Vector3.new(-90,0,0)
+					playerBomb.CanCollide = false
+					playerBomb.moveUp.Disabled = false
+					--Debris:AddItem(playerBomb,2.1)
+					wait(1.5)
 
-         local activeRays = {}
-         table.insert(activeRays, Zp)
-         table.insert(activeRays, Zm)
-         table.insert(activeRays, Xp)
-         table.insert(activeRays, Xm)
-         table.insert(activeRays,playerBomb)
-         
-         spawn(function()
-            for _,v in pairs (activeRays) do
-                Debris:AddItem(v,0.1)
-            end
-         end)
+					--  p = plus | m = minus
+					local Zp = createBombRay(playerBomb,"UpVector",-1)
+					local Zm = createBombRay(playerBomb,"UpVector", 1)
 
-    end
+					--Must change inside function from z to x for position/Cframe/size
+					local Xp = createBombRay(playerBomb,"other", 1)
+					local Xm = createBombRay(playerBomb,"other", -1)
 
+					local activeRays = {}
+					table.insert(activeRays, Zp)
+					table.insert(activeRays, Zm)
+					table.insert(activeRays, Xp)
+					table.insert(activeRays, Xm)
+					table.insert(activeRays,playerBomb)
+
+					spawn(function()
+						for _,v in pairs (activeRays) do
+							Debris:AddItem(v,0.1)
+						end
+					end)
+
+                    hit:SetAttribute("isOccupied",false)
+				end
+                melonsPlaced.Value = melonsPlaced.Value - 1
+			end
+		end
+	end 
 end)

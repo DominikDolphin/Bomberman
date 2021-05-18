@@ -2,7 +2,7 @@ local UserInputService = game:GetService("UserInputService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local dropMelon = ReplicatedStorage.Events:WaitForChild("dropMelon")
 local player = game.Players.LocalPlayer
-
+local playerStats = player:WaitForChild("leaderstats")
 game:GetService("UserInputService").InputBegan:connect(function(input, Processed)
 	if not Processed then
 		if input.KeyCode == Enum.KeyCode.F then --a PC key was pressed
@@ -18,8 +18,14 @@ game:GetService("UserInputService").InputBegan:connect(function(input, Processed
 					local x = hit:GetAttribute("x")
 					local y = hit:GetAttribute("z")
 					local occupied = hit:GetAttribute("isOccupied")
-					if not occupied then						
-						dropMelon:FireServer(hit)
+					if not occupied then
+						local melons = playerStats:FindFirstChild("Melons")
+						local melonsPlaced = playerStats:FindFirstChild("MelonsPlaced")
+						if melons and melonsPlaced then
+							if melonsPlaced.Value < melons.Value then
+								dropMelon:FireServer(hit)
+							end
+						end					
 					end 
 				end
 			end
