@@ -7,30 +7,16 @@
 			<token name="AnimationWeightedBlendFix">0</token>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<token name="ClientAnimatorThrottling">0</token>
-			<string name="CollisionGroups">Default^0^1</string>
+			<string name="CollisionGroups">Default^0^-1</string>
 			<Ref name="CurrentCamera">RBX33A88214AACA490F8901A78B109D1846</Ref>
 			<double name="DistributedGameTime">0</double>
 			<bool name="ExplicitAutoJoints">true</bool>
 			<float name="FallenPartsDestroyHeight">-500</float>
-			<bool name="FilteringEnabled">true</bool>
 			<float name="Gravity">196.199997</float>
+			<token name="HumanoidOnlySetCollisionsOnStateChange">0</token>
 			<token name="InterpolationThrottling">0</token>
 			<token name="LevelOfDetail">0</token>
 			<token name="MeshPartHeadsAndAccessories">0</token>
-			<CoordinateFrame name="ModelInPrimary">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-				<R00>1</R00>
-				<R01>0</R01>
-				<R02>0</R02>
-				<R10>0</R10>
-				<R11>1</R11>
-				<R12>0</R12>
-				<R20>0</R20>
-				<R21>0</R21>
-				<R22>1</R22>
-			</CoordinateFrame>
 			<CoordinateFrame name="ModelMeshCFrame">
 				<X>0</X>
 				<Y>0</Y>
@@ -52,11 +38,13 @@
 				<Z>0</Z>
 			</Vector3>
 			<string name="Name">Workspace</string>
-			<bool name="NeedsPivotMigration">true</bool>
+			<bool name="NeedsPivotMigration">false</bool>
 			<token name="PhysicsSteppingMethod">0</token>
 			<Ref name="PrimaryPart">null</Ref>
+			<token name="Retargeting">0</token>
 			<token name="SignalBehavior">0</token>
 			<int64 name="SourceAssetId">-1</int64>
+			<token name="StreamOutBehavior">0</token>
 			<bool name="StreamingEnabled">false</bool>
 			<int name="StreamingMinRadius">64</int>
 			<token name="StreamingPauseMode">0</token>
@@ -64,33 +52,48 @@
 			<BinaryString name="Tags"></BinaryString>
 			<bool name="TerrainWeldsFixed">true</bool>
 			<bool name="TouchesUseCollisionGroups">false</bool>
-			<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
+			<OptionalCoordinateFrame name="WorldPivotData">
+				<CFrame>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CFrame>
+			</OptionalCoordinateFrame>
 		</Properties>
 		<Item class="Camera" referent="RBX33A88214AACA490F8901A78B109D1846">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>34.4554596</X>
-					<Y>35.3819847</Y>
-					<Z>8.91021061</Z>
-					<R00>-0.804070592</R00>
-					<R01>0.458104551</R01>
-					<R02>-0.378959924</R02>
-					<R10>-0</R10>
-					<R11>0.637406826</R11>
-					<R12>0.770527422</R12>
-					<R20>0.594533741</R20>
-					<R21>0.619558454</R21>
-					<R22>-0.512520194</R22>
+					<X>43.378727</X>
+					<Y>33.0881271</Y>
+					<Z>170.742905</Z>
+					<R00>0.73225522</R00>
+					<R01>-0.587997139</R01>
+					<R02>0.343601108</R02>
+					<R10>1.49011594e-08</R10>
+					<R11>0.504531324</R11>
+					<R12>0.863393486</R12>
+					<R20>-0.681030333</R20>
+					<R21>-0.632224381</R21>
+					<R22>0.369445682</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>35.2133789</X>
-					<Y>33.8409309</Y>
-					<Z>9.93525028</Z>
+					<X>42.6915245</X>
+					<Y>31.3613396</Y>
+					<Z>170.004013</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -136,6 +139,7 @@
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -157,6 +161,7 @@
 				<token name="Material">256</token>
 				<BinaryString name="MaterialColors"><![CDATA[AAAAAAAAan8/P39rf2Y/ilY+j35fi21PZmxvZbDqw8faiVpHOi4kHh4lZlw76JxKc3trhHta
 gcLgc4RKxr21zq2UlJSM]]></BinaryString>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">Terrain</string>
 				<BinaryString name="PhysicsGrid">AgMAAAAAAAAAAAAAAAA=</BinaryString>
 				<CoordinateFrame name="PivotOffset">
@@ -240,6 +245,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -258,6 +264,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<bool name="Locked">true</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">Baseplate</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -322,6 +329,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<BinaryString name="Tags"></BinaryString>
 					<Content name="Texture"><url>rbxassetid://6372755229</url></Content>
 					<float name="Transparency">0.800000012</float>
+					<int name="ZIndex">1</int>
 				</Properties>
 			</Item>
 		</Item>
@@ -339,9 +347,9 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<token name="BottomSurface">0</token>
 				<token name="BottomSurfaceInput">0</token>
 				<CoordinateFrame name="CFrame">
-					<X>16</X>
-					<Y>27.5</Y>
-					<Z>22</Z>
+					<X>46.5</X>
+					<Y>8</Y>
+					<Z>170.5</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -353,6 +361,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -360,7 +369,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<PhysicalProperties name="CustomPhysicalProperties">
 					<CustomPhysics>false</CustomPhysics>
 				</PhysicalProperties>
-				<int name="Duration">10</int>
+				<int name="Duration">0</int>
 				<bool name="Enabled">true</bool>
 				<float name="FrontParamA">-0.5</float>
 				<float name="FrontParamB">0.5</float>
@@ -373,6 +382,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">SpawnLocation</string>
 				<bool name="Neutral">true</bool>
 				<CoordinateFrame name="PivotOffset">
@@ -435,6 +445,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<BinaryString name="Tags"></BinaryString>
 					<Content name="Texture"><url>rbxasset://textures/SpawnLocation.png</url></Content>
 					<float name="Transparency">0</float>
+					<int name="ZIndex">1</int>
 				</Properties>
 			</Item>
 		</Item>
@@ -473,6 +484,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<R22>0.000796248845</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -491,6 +503,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">Bomb</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -593,6 +606,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<R22>2.7573796e-07</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -625,6 +639,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<Content name="MeshID"><url>rbxassetid://430334062</url></Content>
 				<Content name="MeshId"><url>rbxassetid://430334062</url></Content>
 				<string name="Name">Bomb</string>
@@ -707,7 +722,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -719,6 +734,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -737,6 +753,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -800,7 +817,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -812,6 +829,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -830,6 +848,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -893,7 +912,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -905,6 +924,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -923,6 +943,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -986,7 +1007,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -998,6 +1019,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1016,6 +1038,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1079,7 +1102,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1091,6 +1114,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1109,6 +1133,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1172,7 +1197,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1184,6 +1209,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1202,6 +1228,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1265,7 +1292,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1277,6 +1304,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1295,6 +1323,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1358,7 +1387,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1370,6 +1399,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1388,6 +1418,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1451,7 +1482,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1463,6 +1494,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1481,6 +1513,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1544,7 +1577,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1556,6 +1589,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1574,6 +1608,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1637,7 +1672,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1649,6 +1684,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1667,6 +1703,7 @@ AHoGAAAAAAAAHEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1730,7 +1767,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1742,6 +1779,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1760,6 +1798,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1823,7 +1862,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1835,6 +1874,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1853,6 +1893,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -1916,7 +1957,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -1928,6 +1969,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -1946,6 +1988,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2009,7 +2052,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2021,6 +2064,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2039,6 +2083,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2102,7 +2147,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2114,6 +2159,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2132,6 +2178,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2195,7 +2242,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2207,6 +2254,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2225,6 +2273,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2288,7 +2337,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2300,6 +2349,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2318,6 +2368,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2381,7 +2432,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2393,6 +2444,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2411,6 +2463,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2474,7 +2527,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2486,6 +2539,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2504,6 +2558,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2567,7 +2622,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2579,6 +2634,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2597,6 +2653,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2660,7 +2717,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2672,6 +2729,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2690,6 +2748,7 @@ AHoGAAAAAAAALEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2753,7 +2812,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2765,6 +2824,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2783,6 +2843,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2846,7 +2907,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2858,6 +2919,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2876,6 +2938,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -2939,7 +3002,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -2951,6 +3014,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -2969,6 +3033,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3032,7 +3097,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3044,6 +3109,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3062,6 +3128,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3125,7 +3192,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3137,6 +3204,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3155,6 +3223,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3218,7 +3287,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3230,6 +3299,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3248,6 +3318,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3311,7 +3382,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3323,6 +3394,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3341,6 +3413,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3404,7 +3477,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3416,6 +3489,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3434,6 +3508,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3497,7 +3572,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3509,6 +3584,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3527,6 +3603,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3590,7 +3667,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3602,6 +3679,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3620,6 +3698,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3683,7 +3762,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3695,6 +3774,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3713,6 +3793,7 @@ AHoGAAAAAAAANUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3776,7 +3857,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3788,6 +3869,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3806,6 +3888,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3869,7 +3952,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3881,6 +3964,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3899,6 +3983,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -3962,7 +4047,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -3974,6 +4059,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -3992,6 +4078,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4055,7 +4142,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4067,6 +4154,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4085,6 +4173,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4148,7 +4237,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4160,6 +4249,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4178,6 +4268,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4241,7 +4332,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4253,6 +4344,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4271,6 +4363,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4334,7 +4427,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4346,6 +4439,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4364,6 +4458,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4427,7 +4522,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4439,6 +4534,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4457,6 +4553,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4520,7 +4617,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4532,6 +4629,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4550,6 +4648,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4613,7 +4712,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4625,6 +4724,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4643,6 +4743,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4706,7 +4807,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4718,6 +4819,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4736,6 +4838,7 @@ AHoGAAAAAAAAPEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4799,7 +4902,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4811,6 +4914,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4829,6 +4933,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4892,7 +4997,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4904,6 +5009,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -4922,6 +5028,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -4985,7 +5092,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -4997,6 +5104,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5015,6 +5123,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5078,7 +5187,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5090,6 +5199,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5108,6 +5218,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5171,7 +5282,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5183,6 +5294,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5201,6 +5313,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5264,7 +5377,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5276,6 +5389,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5294,6 +5408,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5357,7 +5472,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5369,6 +5484,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5387,6 +5503,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5450,7 +5567,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5462,6 +5579,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5480,6 +5598,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5543,7 +5662,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5555,6 +5674,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5573,6 +5693,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5636,7 +5757,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5648,6 +5769,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5666,6 +5788,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5729,7 +5852,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5741,6 +5864,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5759,6 +5883,7 @@ AHoGAAAAAACAQUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5822,7 +5947,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5834,6 +5959,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5852,6 +5978,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -5915,7 +6042,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -5927,6 +6054,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -5945,6 +6073,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6008,7 +6137,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6020,6 +6149,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6038,6 +6168,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6101,7 +6232,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6113,6 +6244,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6131,6 +6263,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6194,7 +6327,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6206,6 +6339,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6224,6 +6358,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6287,7 +6422,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6299,6 +6434,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6317,6 +6453,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6380,7 +6517,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6392,6 +6529,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6410,6 +6548,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6473,7 +6612,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6485,6 +6624,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6503,6 +6643,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6566,7 +6707,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6578,6 +6719,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6596,6 +6738,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6659,7 +6802,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6671,6 +6814,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6689,6 +6833,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6752,7 +6897,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6764,6 +6909,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6782,6 +6928,7 @@ AHoGAAAAAAAARUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6845,7 +6992,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6857,6 +7004,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6875,6 +7023,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -6938,7 +7087,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -6950,6 +7099,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -6968,6 +7118,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7031,7 +7182,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7043,6 +7194,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7061,6 +7213,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7124,7 +7277,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7136,6 +7289,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7154,6 +7308,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7217,7 +7372,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7229,6 +7384,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7247,6 +7403,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7310,7 +7467,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7322,6 +7479,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7340,6 +7498,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7403,7 +7562,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7415,6 +7574,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7433,6 +7593,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7496,7 +7657,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7508,6 +7669,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7526,6 +7688,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7589,7 +7752,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7601,6 +7764,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7619,6 +7783,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7682,7 +7847,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7694,6 +7859,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7712,6 +7878,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7775,7 +7942,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7787,6 +7954,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7805,6 +7973,7 @@ AHoGAAAAAACASEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7868,7 +8037,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7880,6 +8049,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7898,6 +8068,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -7961,7 +8132,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -7973,6 +8144,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -7991,6 +8163,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8054,7 +8227,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8066,6 +8239,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8084,6 +8258,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8147,7 +8322,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8159,6 +8334,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8177,6 +8353,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8240,7 +8417,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8252,6 +8429,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8270,6 +8448,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8333,7 +8512,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8345,6 +8524,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8363,6 +8543,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8426,7 +8607,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8438,6 +8619,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8456,6 +8638,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8519,7 +8702,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8531,6 +8714,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8549,6 +8733,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8612,7 +8797,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8624,6 +8809,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8642,6 +8828,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8705,7 +8892,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8717,6 +8904,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8735,6 +8923,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8798,7 +8987,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8810,6 +8999,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8828,6 +9018,7 @@ AHoGAAAAAAAATEA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8891,7 +9082,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8903,6 +9094,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -8921,6 +9113,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -8984,7 +9177,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -8996,6 +9189,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9014,6 +9208,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9077,7 +9272,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9089,6 +9284,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9107,6 +9303,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9170,7 +9367,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9182,6 +9379,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9200,6 +9398,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9263,7 +9462,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9275,6 +9474,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9293,6 +9493,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9356,7 +9557,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9368,6 +9569,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9386,6 +9588,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9449,7 +9652,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9461,6 +9664,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9479,6 +9683,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9542,7 +9747,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9554,6 +9759,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9572,6 +9778,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9635,7 +9842,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9647,6 +9854,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9665,6 +9873,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9728,7 +9937,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9740,6 +9949,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9758,6 +9968,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9821,7 +10032,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9833,6 +10044,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9851,6 +10063,7 @@ AHoGAAAAAACAT0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -9914,7 +10127,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -9926,6 +10139,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -9944,6 +10158,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10007,7 +10222,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10019,6 +10234,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10037,6 +10253,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10100,7 +10317,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10112,6 +10329,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10130,6 +10348,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10193,7 +10412,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10205,6 +10424,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10223,6 +10443,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10286,7 +10507,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10298,6 +10519,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10316,6 +10538,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10379,7 +10602,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10391,6 +10614,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10409,6 +10633,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10472,7 +10697,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10484,6 +10709,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10502,6 +10728,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10565,7 +10792,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10577,6 +10804,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10595,6 +10823,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10658,7 +10887,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10670,6 +10899,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10688,6 +10918,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10751,7 +10982,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10763,6 +10994,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10781,6 +11013,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10844,7 +11077,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10856,6 +11089,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10874,6 +11108,7 @@ AHoGAAAAAACAUUA=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -10937,7 +11172,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -10949,6 +11184,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -10967,6 +11203,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11030,7 +11267,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11042,6 +11279,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11060,6 +11298,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11123,7 +11362,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11135,6 +11374,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11153,6 +11393,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11216,7 +11457,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11228,6 +11469,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11246,6 +11488,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11309,7 +11552,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11321,6 +11564,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11339,6 +11583,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11402,7 +11647,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11414,6 +11659,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11432,6 +11678,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11495,7 +11742,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11507,6 +11754,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11525,6 +11773,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11588,7 +11837,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11600,6 +11849,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11618,6 +11868,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11681,7 +11932,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11693,6 +11944,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11711,6 +11963,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11774,7 +12027,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11786,6 +12039,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11804,6 +12058,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11867,7 +12122,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>5</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11879,6 +12134,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11897,6 +12153,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -11967,7 +12224,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -11979,6 +12236,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -11997,6 +12255,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12059,7 +12318,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12071,6 +12330,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12089,6 +12349,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12151,7 +12412,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12163,6 +12424,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12181,6 +12443,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12243,7 +12506,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12255,6 +12518,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12273,6 +12537,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12335,7 +12600,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12347,6 +12612,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12365,6 +12631,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12427,7 +12694,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12439,6 +12706,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12457,6 +12725,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12519,7 +12788,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12531,6 +12800,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12549,6 +12819,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12611,7 +12882,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12623,6 +12894,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12641,6 +12913,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12703,7 +12976,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12715,6 +12988,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12733,6 +13007,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12795,7 +13070,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12807,6 +13082,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12825,6 +13101,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12887,7 +13164,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>7</Z>
+						<Z>153</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12899,6 +13176,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -12917,6 +13195,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -12979,7 +13258,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -12991,6 +13270,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13009,6 +13289,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13071,7 +13352,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>14</Z>
+						<Z>160</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13083,6 +13364,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13101,6 +13383,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13163,7 +13446,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13175,6 +13458,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13193,6 +13477,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13255,7 +13540,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>21</Z>
+						<Z>167</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13267,6 +13552,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13285,6 +13571,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13347,7 +13634,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13359,6 +13646,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13377,6 +13665,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13439,7 +13728,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>28</Z>
+						<Z>174</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13451,6 +13740,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13469,6 +13759,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13531,7 +13822,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13543,6 +13834,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13561,6 +13853,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13623,7 +13916,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13635,6 +13928,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13653,6 +13947,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13715,7 +14010,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13727,6 +14022,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13745,6 +14041,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13807,7 +14104,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13819,6 +14116,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13837,6 +14135,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13899,7 +14198,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -13911,6 +14210,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -13929,6 +14229,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -13991,7 +14292,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14003,6 +14304,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14021,6 +14323,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14083,7 +14386,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14095,6 +14398,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14113,6 +14417,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14175,7 +14480,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14187,6 +14492,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14205,6 +14511,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14267,7 +14574,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14279,6 +14586,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14297,6 +14605,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14359,7 +14668,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>63</Z>
+						<Z>209</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14371,6 +14680,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14389,6 +14699,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14451,7 +14762,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14463,6 +14774,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14481,6 +14793,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14543,7 +14856,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>70</Z>
+						<Z>216</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14555,6 +14868,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14573,6 +14887,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14635,7 +14950,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>7</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14647,6 +14962,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14665,6 +14981,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14727,7 +15044,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>14</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14739,6 +15056,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14757,6 +15075,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14819,7 +15138,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14831,6 +15150,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14849,6 +15169,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -14911,7 +15232,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -14923,6 +15244,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -14941,6 +15263,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15003,7 +15326,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15015,6 +15338,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15033,6 +15357,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15095,7 +15420,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15107,6 +15432,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15125,6 +15451,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15187,7 +15514,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>49</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15199,6 +15526,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15217,6 +15545,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15279,7 +15608,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>56</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15291,6 +15620,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15309,6 +15639,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15371,7 +15702,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>63</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15383,6 +15714,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15401,6 +15733,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15463,7 +15796,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>70</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15475,6 +15808,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15493,6 +15827,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15555,7 +15890,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>77</X>
 						<Y>10</Y>
-						<Z>77</Z>
+						<Z>223</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15567,6 +15902,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15585,6 +15921,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15647,7 +15984,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15659,6 +15996,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15677,6 +16015,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15739,7 +16078,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>42</X>
 						<Y>10</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15751,6 +16090,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15769,6 +16109,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">1280</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Part</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -15844,6 +16185,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<R22>-2.91038305e-10</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -15862,6 +16204,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">Bomb</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -15959,7 +16302,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -15971,6 +16314,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -15989,6 +16333,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16051,7 +16396,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16063,6 +16408,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16081,6 +16427,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16143,7 +16490,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16155,6 +16502,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16173,6 +16521,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16235,7 +16584,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16247,6 +16596,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16265,6 +16615,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16327,7 +16678,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>21</X>
 						<Y>10</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16339,6 +16690,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16357,6 +16709,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16419,7 +16772,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>56</Z>
+						<Z>202</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16431,6 +16784,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16449,6 +16803,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16511,7 +16866,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16523,6 +16878,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16541,6 +16897,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16603,7 +16960,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>42</Z>
+						<Z>188</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16615,6 +16972,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16633,6 +16991,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16695,7 +17054,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>35</X>
 						<Y>10</Y>
-						<Z>35</Z>
+						<Z>181</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16707,6 +17066,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16725,6 +17085,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16787,7 +17148,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<CoordinateFrame name="CFrame">
 						<X>28</X>
 						<Y>10</Y>
-						<Z>49</Z>
+						<Z>195</Z>
 						<R00>1</R00>
 						<R01>0</R01>
 						<R02>0</R02>
@@ -16799,6 +17160,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<bool name="CanCollide">true</bool>
+					<bool name="CanQuery">true</bool>
 					<bool name="CanTouch">true</bool>
 					<bool name="CastShadow">true</bool>
 					<int name="CollisionGroupId">0</int>
@@ -16817,6 +17179,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
 					<token name="Material">528</token>
+					<Ref name="MaterialVariant">null</Ref>
 					<string name="Name">Crate</string>
 					<CoordinateFrame name="PivotOffset">
 						<X>0</X>
@@ -16960,6 +17323,7 @@ AHoGAAAAAABAU0A=]]></BinaryString>
 	<Item class="PlayerEmulatorService" referent="RBXDECB480AA83544038C619E47675F8B04">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="CustomPoliciesEnabled">false</bool>
 			<string name="DEPRECATED_SerializedEmulatedPolicyInfo"></string>
 			<string name="EmulatedCountryCode"></string>
 			<string name="EmulatedGameLocale"></string>
@@ -17094,6 +17458,33 @@ end)]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
+				<Item class="LocalScript" referent="RBX3ED982BAB84C467292F94849BB874DC2">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">KillfeedScript</string>
+						<string name="ScriptGuid">{61BCEA5E-8C3E-434D-9C27-B8611BA74B91}</string>
+						<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local killfeedEvent = ReplicatedStorage.KillfeedEvent
+
+local killfeedModule = require(ReplicatedStorage.Common.Killfeed)
+
+local gui = game.Players.LocalPlayer.PlayerGui:WaitForChild("MelonBomber")
+local logs = gui:WaitForChild("Logs")
+local template = logs:WaitForChild("Template")
+
+local killfeed = killfeedModule:New(template)
+
+killfeedEvent.OnClientEvent:Connect(function(str)
+    killfeed = killfeed + str
+end)
+
+]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
 			</Item>
 		</Item>
 		<Item class="StarterCharacterScripts" referent="RBX89B7D045982442A196301736C19A8488">
@@ -17122,6 +17513,7 @@ end)]]></ProtectedString>
 			<bool name="ShowDevelopmentGui">true</bool>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
+			<token name="VirtualCursorMode">0</token>
 		</Properties>
 		<Item class="ScreenGui" referent="RBX706BACCA4FE64E69943B93E01BE499EB">
 			<Properties>
@@ -18461,6 +18853,7 @@ end)
 							<YS>0.598395705</YS>
 							<YO>0</YO>
 						</UDim2>
+						<token name="ResampleMode">0</token>
 						<Ref name="RootLocalizationTable">null</Ref>
 						<float name="Rotation">0</float>
 						<token name="ScaleType">0</token>
@@ -18548,6 +18941,7 @@ end)
 							<YS>0.646524072</YS>
 							<YO>0</YO>
 						</UDim2>
+						<token name="ResampleMode">0</token>
 						<Ref name="RootLocalizationTable">null</Ref>
 						<float name="Rotation">0</float>
 						<token name="ScaleType">0</token>
@@ -18639,6 +19033,7 @@ end)
 							<YO>0</YO>
 						</UDim2>
 						<Content name="PressedImage"><null></null></Content>
+						<token name="ResampleMode">0</token>
 						<Ref name="RootLocalizationTable">null</Ref>
 						<float name="Rotation">0</float>
 						<token name="ScaleType">0</token>
@@ -18849,6 +19244,7 @@ end)]]></ProtectedString>
 						<YO>0</YO>
 					</UDim2>
 					<Content name="PressedImage"><null></null></Content>
+					<token name="ResampleMode">0</token>
 					<Ref name="RootLocalizationTable">null</Ref>
 					<float name="Rotation">0</float>
 					<token name="ScaleType">1</token>
@@ -18960,6 +19356,166 @@ end)]]></ProtectedString>
 						<token name="TextYAlignment">1</token>
 						<bool name="Visible">true</bool>
 						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Frame" referent="RBX37BF128828C94858BEBBF632FA951BF4">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="AutoLocalize">true</bool>
+					<token name="AutomaticSize">0</token>
+					<Color3 name="BackgroundColor3">
+						<R>1</R>
+						<G>1</G>
+						<B>1</B>
+					</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">
+						<R>0.105882362</R>
+						<G>0.164705887</G>
+						<B>0.207843155</B>
+					</Color3>
+					<token name="BorderMode">0</token>
+					<int name="BorderSizePixel">1</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">Logs</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0.75999999</XS>
+						<XO>0</XO>
+						<YS>0</YS>
+						<YO>0</YO>
+					</UDim2>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>0.200000003</XS>
+						<XO>0</XO>
+						<YS>0.300000012</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<int64 name="SourceAssetId">-1</int64>
+					<token name="Style">0</token>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+				</Properties>
+				<Item class="UIListLayout" referent="RBX21B518BCCD99414DBD47C1FF5A825076">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<token name="FillDirection">1</token>
+						<token name="HorizontalAlignment">1</token>
+						<string name="Name">UIListLayout</string>
+						<UDim name="Padding">
+							<S>0</S>
+							<O>0</O>
+						</UDim>
+						<token name="SortOrder">2</token>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<token name="VerticalAlignment">1</token>
+					</Properties>
+				</Item>
+				<Item class="TextLabel" referent="RBX36D629BB89DC4858AF79957ECC276416">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="AutoLocalize">true</bool>
+						<token name="AutomaticSize">0</token>
+						<Color3 name="BackgroundColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<token name="BorderMode">0</token>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<token name="Font">3</token>
+						<int name="LayoutOrder">0</int>
+						<float name="LineHeight">1</float>
+						<int name="MaxVisibleGraphemes">-1</int>
+						<string name="Name">Template</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="RichText">false</bool>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>0.330000013</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<string name="Text">Label</string>
+						<Color3 name="TextColor3">
+							<R>0</R>
+							<G>0</G>
+							<B>0</B>
+						</Color3>
+						<bool name="TextScaled">true</bool>
+						<float name="TextSize">14</float>
+						<Color3 name="TextStrokeColor3">
+							<R>0</R>
+							<G>0</G>
+							<B>0</B>
+						</Color3>
+						<float name="TextStrokeTransparency">1</float>
+						<float name="TextTransparency">0</float>
+						<token name="TextTruncate">0</token>
+						<bool name="TextWrapped">true</bool>
+						<token name="TextXAlignment">2</token>
+						<token name="TextYAlignment">1</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+				</Item>
+				<Item class="LocalScript" referent="RBXB52B5B8BCA6E4244AD5F54B10A10B94E">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">KillfeedScript</string>
+						<string name="ScriptGuid">{83573C1D-6F92-4CC4-A2D8-067E488BD712}</string>
+						<ProtectedString name="Source"></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
@@ -19128,7 +19684,7 @@ end)]]></ProtectedString>
 			<Item class="Script" referent="RBX2E4BD90B2EB5445FA719B647296B3274">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
-					<bool name="Disabled">true</bool>
+					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">createGrid</string>
 					<string name="ScriptGuid">{C20D4BC2-3FB3-44D5-A7D9-CF7CF88FD4B1}</string>
@@ -19214,8 +19770,9 @@ local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
 local bomb = game.ServerStorage:WaitForChild("Bomb")
 local Debris = game:GetService("Debris")
 local avPowerUps = game.Workspace:WaitForChild("availablePowerUps")
-local power = 2 --Users power
+local power = 0 
 local StatsCloud = game.ServerStorage:WaitForChild("StatsCloud")
+
 local function createBomb()
     local clone = bomb:Clone()
     clone.Parent = game.Workspace.Bombs
@@ -19300,6 +19857,8 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
     killRay.CanCollide = false
     killRay.Transparency = 0.4
     killRay.BrickColor = BrickColor.Red()
+    killRay:SetAttribute("originalOwner", playerBomb:GetAttribute("originalOwner"))
+    killRay:SetAttribute("newOwner", playerBomb:GetAttribute("newOwner"))
     --killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     
     if raycastResult then
@@ -19316,9 +19875,13 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
             local newMid = origin + touchPartDirection
             killRay.CFrame = CFrame.new(newMid,origin)
             killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
-            
+            killRay.CFrame = killRay.CFrame + Vector3.new(0,1,0)
             if hit.Name == "Bomb" then
                 hit:SetAttribute("explode",true)
+                hit:SetAttribute("newOwner", playerBomb:GetAttribute("originalOwner"))
+                --print(hit:GetAttribute("newOwner"))
+
+                --print("========================================")
             end
             if hit.Name == "Crate" or hit.Parent == "Crates" then
                 dropRandomPowerUp(hit)
@@ -19328,9 +19891,11 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
                 hit.Name == "SpeedUp" or 
                 hit.Name == "MelonUp" 
             then hit:Destroy() end
+            
         end  
     else -- It didnt hit anything
         killRay.CFrame = CFrame.new(midpoint,origin)
+        killRay.CFrame = killRay.CFrame + Vector3.new(0,1,0)
         killRay.Size = Vector3.new(tileSize,radius, direction.magnitude)
     end
     
@@ -19369,15 +19934,19 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
 	if findPlayerStats then
 		local melons  = findPlayerStats:FindFirstChild("Melons")
 		local melonsPlaced  = findPlayerStats:FindFirstChild("MelonsPlaced")
-		if melons and melonsPlaced then
+        local powerStat = findPlayerStats:FindFirstChild("Power")
+		if melons and melonsPlaced and power then
 			if melonsPlaced.Value < melons.Value then
 				melonsPlaced.Value = melonsPlaced.Value + 1
+                power = powerStat.Value
 				local x = hit:GetAttribute("x")
 				local z = hit:GetAttribute("z")
 
 				if x and z then
 					hit:SetAttribute("isOccupied",true)
 					local playerBomb = createBomb()
+                    playerBomb:SetAttribute("originalOwner" ,player.Name)
+                    playerBomb:SetAttribute("newOwner" ,player.Name)
 					playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
 					playerBomb.Rotation = Vector3.new(-90,0,0)
 					playerBomb.CanCollide = false
@@ -19387,36 +19956,15 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
                     spawn(function()
                         playerBomb:GetAttributeChangedSignal("explode"):Connect(function()
                             explode(playerBomb)
+                            
                         end)
                     end)
-					wait(1.5)
+
+					wait(2)
                     
                     if playerBomb:GetAttribute("explode") == false then
-                        --explode(playerBomb)
                         playerBomb:SetAttribute("explode",true)
                     end
-                    --[[
-					--  p = plus | m = minus
-					local Zp = createBombRay(playerBomb,"UpVector",-1)
-					local Zm = createBombRay(playerBomb,"UpVector", 1)
-
-					--Must change inside function from z to x for position/Cframe/size
-					local Xp = createBombRay(playerBomb,"other", 1)
-					local Xm = createBombRay(playerBomb,"other", -1)
-
-					local activeRays = {}
-					table.insert(activeRays, Zp)
-					table.insert(activeRays, Zm)
-					table.insert(activeRays, Xp)
-					table.insert(activeRays, Xm)
-					table.insert(activeRays,playerBomb)
-
-					spawn(function()
-						for _,v in pairs (activeRays) do
-							Debris:AddItem(v,0.1)
-						end
-					end)
-                    ]]
 
                     hit:SetAttribute("isOccupied",false)
 				end
@@ -19436,16 +19984,19 @@ end)]]></ProtectedString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">killOnTouch</string>
 					<string name="ScriptGuid">{B21D3004-7A24-4644-B284-52BB82FB3995}</string>
-					<ProtectedString name="Source"><![CDATA[script.Parent.Touched:Connect(function(hit)
-    
-    local h = hit.Parent:FindFirstChild("Humanoid")
-    if h then
-        h.Health = 0
+					<ProtectedString name="Source"><![CDATA[local this = script.Parent
+local killer = this:GetAttribute("newOwner")
+
+local touchingPart = (game.Workspace:GetPartsInPart(this))
+for i,v in pairs(touchingPart) do
+	if v.Name == "HumanoidRootPart" then
+        local hum = v.Parent:FindFirstChild("Humanoid")
+        if hum then
+            hum.Health = 0;
+            print(killer .. " killed " .. v.Parent.Name .. " ganggg")
+        end
     end
-    if hit.Parent == "availablePowerUps" then
-        hit:Destroy()
-    end
-end)]]></ProtectedString>
+end]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
@@ -19469,7 +20020,7 @@ local utilities = require(game.ReplicatedStorage.Common.Utilities);
 
 --Parallel Array of Stat name and value
 local statNames = {"Power", "Speed", "Melons", "MelonsPlaced"};
-local statValues = {1,1,1,0};
+local statValues = {1,1,2,0};
 
 --Create a Storage
 local statsStorage = utilities.createFolder("StatsCloud", game.ServerStorage);
@@ -19518,6 +20069,28 @@ end)]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
+			<Item class="Script" referent="RBX4509D7F6656947F38A516C1CB1120DD9">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">testLog</string>
+					<string name="ScriptGuid">{AD909C99-C95F-44F0-9959-0F019B47BB37}</string>
+					<ProtectedString name="Source"><![CDATA[ local ReplicatedStorage = game:GetService("ReplicatedStorage")
+ local killfeedEvent = ReplicatedStorage:WaitForChild("KillfeedEvent")
+
+-- game.Players.PlayerAdded(function(player)
+--     print("player joined")
+--     --killfeedEvent:FireAllClients(player.Name .. " joined!")
+-- end)
+
+game.Players.PlayerAdded:Connect(function(player)
+	killfeedEvent:FireAllClients(player.Name .. " joined!")
+end)]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
 		</Item>
 	</Item>
 	<Item class="ServerStorage" referent="RBX16931331F08F40DD8D5533D502A7E72D">
@@ -19530,7 +20103,8 @@ end)]]></ProtectedString>
 		<Item class="Part" referent="RBX3BB5F48321DC458FB0B48A4802B2CB19">
 			<Properties>
 				<bool name="Anchored">true</bool>
-				<BinaryString name="AttributesSerialize">AQAAAAcAAABleHBsb2RlAwA=</BinaryString>
+				<BinaryString name="AttributesSerialize"><![CDATA[AwAAAAcAAABleHBsb2RlAwAIAAAAbmV3T3duZXICAAAAAA0AAABvcmlnaW5hbE93bmVyAgAA
+AAA=]]></BinaryString>
 				<float name="BackParamA">-0.5</float>
 				<float name="BackParamB">0.5</float>
 				<token name="BackSurface">0</token>
@@ -19554,6 +20128,7 @@ end)]]></ProtectedString>
 					<R22>0.000796248845</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -19572,6 +20147,7 @@ end)]]></ProtectedString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">Bomb</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -19702,6 +20278,7 @@ end]]></ProtectedString>
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -19720,6 +20297,7 @@ end]]></ProtectedString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">MelonUp</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -19871,6 +20449,7 @@ end)]]></ProtectedString>
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -19889,6 +20468,7 @@ end)]]></ProtectedString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">PowerUp</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -20040,6 +20620,7 @@ end)]]></ProtectedString>
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
 				<bool name="CanTouch">true</bool>
 				<bool name="CastShadow">true</bool>
 				<int name="CollisionGroupId">0</int>
@@ -20058,6 +20639,7 @@ end)]]></ProtectedString>
 				<bool name="Locked">false</bool>
 				<bool name="Massless">false</bool>
 				<token name="Material">256</token>
+				<Ref name="MaterialVariant">null</Ref>
 				<string name="Name">SpeedUp</string>
 				<CoordinateFrame name="PivotOffset">
 					<X>0</X>
@@ -20364,6 +20946,65 @@ return utils
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
+			<Item class="ModuleScript" referent="RBX35E21F0491124E89840BE27CF2A24444">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Killfeed</string>
+					<string name="ScriptGuid">{E3F58DCB-69B6-47AC-B4DC-4175FE4D02EA}</string>
+					<ProtectedString name="Source"><![CDATA[local killfeed = {}
+
+killfeed.__index = killfeed
+
+killfeed.Entries = {}
+killfeed.MaxEntries = 3
+killfeed.Lifetime = 5
+
+function killfeed:New(template)
+    local newKillfeed = setmetatable({},self)
+    newKillfeed.__index = newKillfeed
+    newKillfeed.Template = template
+
+    return newKillfeed
+end
+
+function killfeed.__add(addingKillfeed,value)
+    addingKillfeed:CreateEntry(value)
+    addingKillfeed:Cycle()
+
+    return addingKillfeed
+end
+
+function killfeed:CreateEntry(str)
+    local entry = self.Template:Clone()
+    entry.Text = str
+    entry.Parent = self.Tempalte.Parent
+    entry.Visible = true
+
+    table.insert(self.Entries,1,entry)
+
+    delay(self.Lifetime, function()
+        if entry then
+            entry:Destroy()
+        end
+    end)
+end
+
+function killfeed:Cycle()
+    for i,entry in ipairs(self.Entries) do
+        entry.LayoutOrder = i
+
+        if i > self.MaxEntries then
+            entry:Destroy()
+        end
+    end
+end
+
+return killfeed]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
 		</Item>
 		<Item class="Folder" referent="RBXA9303326FE3D472D91CB36DAC31BF3FC">
 			<Properties>
@@ -20393,6 +21034,14 @@ return utils
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">powerUpMessage</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="RemoteEvent" referent="RBX7A81F209093D48B8949A5C49EEBBEB59">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<string name="Name">KillfeedEvent</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
