@@ -11,5 +11,4 @@ for i,v in pairs(touchingPart) do
             print(killer .. " killed " .. v.Parent.Name .. " ganggg")
         end
     end
-    
 end
