@@ -3,6 +3,7 @@ local killer = this:GetAttribute("newOwner")
 
 local touchingPart = (game.Workspace:GetPartsInPart(this))
 for i,v in pairs(touchingPart) do
+    print("Touched: "..v.Name)
 	if v.Name == "HumanoidRootPart" then
         local hum = v.Parent:FindFirstChild("Humanoid")
         if hum then
@@ -10,4 +11,5 @@ for i,v in pairs(touchingPart) do
             print(killer .. " killed " .. v.Parent.Name .. " ganggg")
         end
     end
+    
 end

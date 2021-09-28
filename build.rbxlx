@@ -73,27 +73,27 @@
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<CoordinateFrame name="CFrame">
-					<X>43.378727</X>
-					<Y>33.0881271</Y>
-					<Z>170.742905</Z>
-					<R00>0.73225522</R00>
-					<R01>-0.587997139</R01>
-					<R02>0.343601108</R02>
-					<R10>1.49011594e-08</R10>
-					<R11>0.504531324</R11>
-					<R12>0.863393486</R12>
-					<R20>-0.681030333</R20>
-					<R21>-0.632224381</R21>
-					<R22>0.369445682</R22>
+					<X>21.8245316</X>
+					<Y>37.6753693</Y>
+					<Z>168.711334</Z>
+					<R00>-0.746369302</R00>
+					<R01>0.48515147</R01>
+					<R02>-0.45558849</R02>
+					<R10>-0</R10>
+					<R11>0.684547782</R11>
+					<R12>0.728967905</R12>
+					<R20>0.665531993</R20>
+					<R21>0.544079244</R21>
+					<R22>-0.510925472</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<token name="FieldOfViewMode">0</token>
 				<CoordinateFrame name="Focus">
-					<X>42.6915245</X>
-					<Y>31.3613396</Y>
-					<Z>170.004013</Z>
+					<X>22.7357082</X>
+					<Y>36.2174339</Y>
+					<Z>169.733185</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -19848,6 +19848,7 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         playerCharacters,
         workspace.Rays:GetChildren(),
         workspace.Tiles:GetChildren(),
+        workspace.availablePowerUps:GetChildren()
     }
     local midpoint = origin + direction/2
     local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
@@ -19989,6 +19990,7 @@ local killer = this:GetAttribute("newOwner")
 
 local touchingPart = (game.Workspace:GetPartsInPart(this))
 for i,v in pairs(touchingPart) do
+    print("Touched: "..v.Name)
 	if v.Name == "HumanoidRootPart" then
         local hum = v.Parent:FindFirstChild("Humanoid")
         if hum then
@@ -19996,6 +19998,7 @@ for i,v in pairs(touchingPart) do
             print(killer .. " killed " .. v.Parent.Name .. " ganggg")
         end
     end
+    
 end]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
