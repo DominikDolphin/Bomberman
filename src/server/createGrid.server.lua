@@ -6,6 +6,7 @@ local grid = Array.new(11,11) --Array Size
 local Pos = CFrame.new(0,5,0); --Starting Position
 local ColorPos = 0; --Used for tile colours
 
+
 local function addKillScript(part)
 	local killScript = script.Parent.killOnTouch:Clone()
 	killScript.Parent = part

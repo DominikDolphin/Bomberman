@@ -22,6 +22,7 @@ local function explodeIfNotAlready(playerBomb)
     end
 end
 
+
 dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.client.lua
 
 	local findPlayerStats = StatsCloud:FindFirstChild(player.Name)
