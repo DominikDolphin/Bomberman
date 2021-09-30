@@ -10,7 +10,7 @@ local utilities = require(game.ReplicatedStorage.Common.Utilities);
 
 --Parallel Array of Stat name and value
 local statNames = {"Power", "Speed", "Melons", "MelonsPlaced"};
-local statValues = {1,1,2,0};
+local statValues = {2,1,2,0};
 
 --Create a Storage
 local statsStorage = utilities.createFolder("StatsCloud", game.ServerStorage);

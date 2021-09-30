@@ -13,7 +13,7 @@ end
 
 function powerUp.dropRandomPowerUp(box)
 	local ran = math.random(1,4);
-    print(ran)
+    --print(ran)
 	if (ran == 1 or ran == 2 or ran == 3) then
 		if avPowerUps then
 			if     ran == 1 then local copy = placePowerUp("PowerUp",avPowerUps, box)

@@ -13,6 +13,7 @@ end
 
 local function explodeIfNotAlready(playerBomb)
     if playerBomb:GetAttribute("explode") == false then
+		print("exploding alone.")
         playerBomb:SetAttribute("explode",true)
     end
 end
@@ -37,6 +38,7 @@ dropMelon.OnServerEvent:connect(function(player,hit) --Params from dropBomb.clie
                     playerBomb:SetAttribute("originalOwner" ,player.Name)
                     playerBomb:SetAttribute("newOwner" ,player.Name)
                     playerBomb:SetAttribute("power" ,power)
+					
 					playerBomb.CFrame = hit.CFrame + Vector3.new(0,4,0)
 					playerBomb.Rotation = Vector3.new(-90,0,0)
 					playerBomb.CanCollide = false

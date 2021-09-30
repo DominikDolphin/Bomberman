@@ -5,6 +5,7 @@ local avPowerUps = game.Workspace:WaitForChild("availablePowerUps")
 local StatsCloud = game.ServerStorage:WaitForChild("StatsCloud")
 local gameSettings = game.ReplicatedStorage.gameSettings
 local tileSize = gameSettings:GetAttribute("tileSize"); -- constant value
+local triggerBomb = nil --Used if triggred by another bomb
 
 local function filterPlayers()
     local players = {}
@@ -36,13 +37,18 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
 
     --List of things to filter out
    local raycastParams = RaycastParams.new()
+   --workspace.availablePowerUps:GetChildren()
    raycastParams.FilterDescendantsInstances = {
         playerBomb, 
         playerCharacters,
         workspace.Rays:GetChildren(),
-        workspace.Tiles:GetChildren(),
-        workspace.availablePowerUps:GetChildren()
+        workspace.Tiles:GetChildren()
+        
     }
+
+  
+
+
     local midpoint = origin + direction/2
     local raycastResult = Workspace:Raycast(origin, direction, raycastParams)
     local killRay = Instance.new("Part")
@@ -59,7 +65,7 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
         local hit = raycastResult.Instance
         local hitPos = raycastResult.Position
         if hit and hitPos then
-            print(hit.Name)
+            --print(hit.Name)
             local touchPartDirection
             if directionVector == "UpVector" then
                 touchPartDirection = playerBomb.CFrame.UpVector * -(hit.Position.Z - playerBomb.Position.Z)/2
@@ -71,8 +77,14 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
             killRay.Size = Vector3.new(tileSize-2,radius, touchPartDirection.magnitude )
             killRay.CFrame = killRay.CFrame + Vector3.new(0,1,0)
             if hit.Name == "Bomb" then
-                hit:SetAttribute("explode",true)
-                hit:SetAttribute("newOwner", playerBomb:GetAttribute("originalOwner"))
+                --hit:SetAttribute("triggeredByOtherBomb", true)
+                
+                if hit:GetAttribute("explode") == false then
+                    hit:SetAttribute("triggeredByOtherBomb", playerBomb.Position)
+                    hit:SetAttribute("newOwner", playerBomb:GetAttribute("originalOwner"))
+                    hit:SetAttribute("explode",true)
+                end
+               
                 --print(hit:GetAttribute("newOwner"))
 
                 --print("========================================")
@@ -99,6 +111,20 @@ local function createBombRay(playerBomb, directionVector, orientationNumber)
 end
 
 local function explode(playerBomb)
+    local triggerBombValue = playerBomb:GetAttribute("triggeredByOtherBomb")
+    print("exploding with value of: " ..tostring(triggerBombValue))
+    
+    if triggerBombValue ~= nil and triggerBombValue ~= false then
+         print("was triggered!!!!!")
+         print(triggerBombValue)
+         triggerBomb = Instance.new("Part")
+         triggerBomb.Parent = game.Workspace
+         triggerBomb.Anchored = true
+         triggerBomb.Size = Vector3.new(3,3,3)
+         triggerBomb.Position = playerBomb:GetAttribute("triggeredByOtherBomb")
+         wait(1)
+     end
+     
     --  p = plus | m = minus
     local Zp = createBombRay(playerBomb,"UpVector",-1)
     local Zm = createBombRay(playerBomb,"UpVector", 1)
@@ -113,12 +139,16 @@ local function explode(playerBomb)
     table.insert(activeRays, Xp)
     table.insert(activeRays, Xm)
     table.insert(activeRays,playerBomb)
-
-    spawn(function()
+   
+    --  spawn(function()
         for _,v in pairs (activeRays) do
             Debris:AddItem(v,0.1)
         end
-    end)
+        table.clear(activeRays)  
+        wait(.1)
+        Debris:AddItem(triggerBomb,0.5)
+    --  end)
+    
 end
 
 bombFolder.ChildAdded:Connect(function()
